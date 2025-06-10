@@ -1,6 +1,5 @@
 ﻿using BatchProcessing.Interfaces;
 using BatchProcessing.Models;
-using BatchProcessing.Validations;
 
 namespace BatchProcessing.Services
 {
