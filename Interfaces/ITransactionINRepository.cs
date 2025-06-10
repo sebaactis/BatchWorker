@@ -2,6 +2,6 @@
 {
     public interface ITransactionINRepository<T>
     {
-        Task<T> Save(T entity);
+        void AddRange(IEnumerable<T> entities);
     }
 }

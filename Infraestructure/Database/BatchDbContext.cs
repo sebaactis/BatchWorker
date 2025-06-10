@@ -5,11 +5,6 @@ namespace BatchProcessing.Infraestructure.Database
 {
     public class BatchDbContext : DbContext
     {
-
-        // TO DO:
-        // 1 - Arreglar para poder grabar hora en este formato -> DD/MM/YYYY HH:MM:SS
-        // 2 - Validar antes de grabar en la base de datos
-        // 3 - Crear una transaccion de base para poder hacer rollback y no grabar en caso de errores.
         public DbSet<TransactionRaw> Transactions_IN { get; set; }
         public BatchDbContext(DbContextOptions<BatchDbContext> options) : base(options) { }
 

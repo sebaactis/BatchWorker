@@ -2,6 +2,6 @@
 {
     public interface ITransactionINService<T>
     {
-        Task<T> Save(T entity);
+        Task Save(List<T> entity, CancellationToken? ct);
     }
 }
