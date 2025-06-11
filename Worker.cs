@@ -28,6 +28,7 @@ namespace BatchProcessing
                 var reader = scope.ServiceProvider.GetRequiredService<IFileReader<TransactionRaw>>();
                 var validator = scope.ServiceProvider.GetRequiredService<ITransactionValidator>();
                 var transactionINService = scope.ServiceProvider.GetRequiredService<ITransactionINService<TransactionRaw>>();
+                var processesService = scope.ServiceProvider.GetRequiredService<ITransactionProcessedService<TransactionProcessed>>();
                 var transactions = reader.Read();
 
                 _logger.LogInformation($"Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: {transactions.Count()}");
@@ -85,6 +86,8 @@ namespace BatchProcessing
                 {
                     _logger.LogWarning($"Transactions with errors:  {transactionsFailed}");
                 }
+
+                await processesService.ProcessesTransactions();
             }
 
             timer.Stop();

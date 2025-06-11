@@ -16,7 +16,9 @@ builder.Services.AddDbContext<BatchDbContext>(options =>
 builder.Services.AddScoped<IFileReader<TransactionRaw>, FileReaderService>();
 builder.Services.AddScoped<ITransactionValidator, TransactionsValidateService>();
 builder.Services.AddScoped<ITransactionINService<TransactionRaw>, TransactionINService>();
+builder.Services.AddScoped<ITransactionProcessedService<TransactionProcessed>, TransactionProcessesService>();
 builder.Services.AddScoped<ITransactionINRepository<TransactionRaw>, TransactionINRepository>();
+builder.Services.AddScoped<ITransactionProcessesRepository<TransactionProcessed>, TransactionProcessesRepository>();
 
 builder.Services.AddHostedService<Worker>();
 
