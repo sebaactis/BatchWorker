@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Descargas\\Seba\\Proyects\\C#\\BatchProcessing\\BatchProcessing.csproj": {}
+    "C:\\Users\\sactis\\Desktop\\Proyects\\BatchWorker\\BatchProcessing.csproj": {}
   },
   "projects": {
-    "D:\\Descargas\\Seba\\Proyects\\C#\\BatchProcessing\\BatchProcessing.csproj": {
+    "C:\\Users\\sactis\\Desktop\\Proyects\\BatchWorker\\BatchProcessing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Descargas\\Seba\\Proyects\\C#\\BatchProcessing\\BatchProcessing.csproj",
+        "projectUniqueName": "C:\\Users\\sactis\\Desktop\\Proyects\\BatchWorker\\BatchProcessing.csproj",
         "projectName": "BatchProcessing",
-        "projectPath": "D:\\Descargas\\Seba\\Proyects\\C#\\BatchProcessing\\BatchProcessing.csproj",
-        "packagesPath": "C:\\Users\\Seba\\.nuget\\packages\\",
-        "outputPath": "D:\\Descargas\\Seba\\Proyects\\C#\\BatchProcessing\\obj\\",
+        "projectPath": "C:\\Users\\sactis\\Desktop\\Proyects\\BatchWorker\\BatchProcessing.csproj",
+        "packagesPath": "C:\\Users\\sactis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sactis\\Desktop\\Proyects\\BatchWorker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Seba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sactis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -104,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

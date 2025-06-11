@@ -43,6 +43,7 @@
         public bool IsInternational { get; set; }
         public bool IsFraudSuspected { get; set; }
         public bool IsOfflineTransaction { get; set; }
+        public bool IsProcessed { get; set; } = false;
 
         // Otros
         public string Notes { get; set; }

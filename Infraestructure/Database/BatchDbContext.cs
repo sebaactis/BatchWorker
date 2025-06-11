@@ -122,6 +122,9 @@ namespace BatchProcessing.Infraestructure.Database
                 entity.Property(e => e.IsOfflineTransaction)
                     .HasColumnName("IsOfflineTransaction");
 
+                entity.Property(e => e.IsProcessed)
+                    .HasColumnName("IsProcessed");
+
                 entity.Property(e => e.Notes)
                     .HasColumnType("text")
                     .HasColumnName("Notes");
