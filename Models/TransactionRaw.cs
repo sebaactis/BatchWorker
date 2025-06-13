@@ -1,7 +1,10 @@
-﻿namespace BatchProcessing.Models
+﻿using CsvHelper.Configuration.Attributes;
+
+namespace BatchProcessing.Models
 {
     public class TransactionRaw
     {
+        [Ignore]
         public long TransactionId { get; set; }
 
         // Datos del comercio

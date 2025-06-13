@@ -2,7 +2,7 @@
 {
     public class TransactionProcessed
     {
-
+        public long Id { get; set; }
         public long TransactionId { get; set; }
 
         // Datos del comercio
@@ -44,6 +44,7 @@
         public bool IsInternational { get; set; }
         public bool IsFraudSuspected { get; set; }
         public bool IsOfflineTransaction { get; set; }
+        public bool IsConciliated { get; set; }
         // Otros
         public string Notes { get; set; }
         public string ReferenceNumber { get; set; }

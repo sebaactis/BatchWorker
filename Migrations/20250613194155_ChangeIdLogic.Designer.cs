@@ -3,6 +3,7 @@ using System;
 using BatchProcessing.Infraestructure.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BatchProcessing.Migrations
 {
     [DbContext(typeof(BatchDbContext))]
-    partial class BatchDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250613194155_ChangeIdLogic")]
+    partial class ChangeIdLogic
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,10 +95,6 @@ namespace BatchProcessing.Migrations
                     b.Property<decimal>("ExchangeRate")
                         .HasColumnType("decimal(18,6)")
                         .HasColumnName("ExchangeRate");
-
-                    b.Property<bool>("IsConciliated")
-                        .HasColumnType("boolean")
-                        .HasColumnName("IsConciliated");
 
                     b.Property<bool>("IsFraudSuspected")
                         .HasColumnType("boolean")

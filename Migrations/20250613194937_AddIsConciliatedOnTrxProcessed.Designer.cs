@@ -3,6 +3,7 @@ using System;
 using BatchProcessing.Infraestructure.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BatchProcessing.Migrations
 {
     [DbContext(typeof(BatchDbContext))]
-    partial class BatchDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250613194937_AddIsConciliatedOnTrxProcessed")]
+    partial class AddIsConciliatedOnTrxProcessed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

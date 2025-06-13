@@ -6,9 +6,10 @@ namespace BatchProcessing
 {
     public class Worker : BackgroundService
     {
-        private long transactionsSuccess, transactionsFailed;
+        private long transactionsSuccess, transactionsFailed, transactionCount = 1;
         private readonly ILogger<Worker> _logger;
         private readonly IServiceProvider _serviceProvider;
+
 
         public Worker(ILogger<Worker> logger, IServiceProvider serviceProvider)
         {
@@ -37,7 +38,7 @@ namespace BatchProcessing
 
                 foreach (var transaction in transactions)
                 {
-                    _logger.LogInformation($"Procesando la transaccion con ID: {transaction.TransactionId}");
+                    _logger.LogInformation($"Procesando la transaccion numero: {transactionCount}");
 
                     var validateTransaction = validator.Validate(new[] { transaction });
 
@@ -45,11 +46,12 @@ namespace BatchProcessing
                     {
                         validList.Add(transaction);
 
-                        _logger.LogInformation($"Transaction ID: {transaction.TransactionId} | " +
+                        _logger.LogInformation($"Transaction Masked Card: {transaction.CardNumberMasked} | " +
                                                $"Merchant ID: {transaction.MerchantId} | " +
                                                $"Amount: {transaction.Amount} {transaction.Currency} | " +
                                                $"Date: {transaction.Date}");
                         transactionsSuccess++;
+                        transactionCount++;
                     }
                     else
                     {
@@ -64,7 +66,9 @@ namespace BatchProcessing
                         }
 
                         transactionsFailed++;
+                        transactionCount++;
                     }
+                    Thread.Sleep(50);
                 }
 
                 if (validList.Any())
@@ -88,6 +92,7 @@ namespace BatchProcessing
                 }
 
                 await processesService.ProcessesTransactions();
+                processesService.CreateOUTFile();
             }
 
             timer.Stop();

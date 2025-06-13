@@ -1,5 +1,6 @@
 ﻿using BatchProcessing.Interfaces;
 using BatchProcessing.Models;
+using System.Globalization;
 
 namespace BatchProcessing.Services
 {
@@ -53,6 +54,7 @@ namespace BatchProcessing.Services
                         IsInternational = trx.IsInternational,
                         IsFraudSuspected = trx.IsFraudSuspected,
                         IsOfflineTransaction = trx.IsOfflineTransaction,
+                        IsConciliated = false,
                         Notes = trx.Notes,
                         ReferenceNumber = trx.ReferenceNumber,
                         ProcessedDate = DateTime.UtcNow
@@ -75,6 +77,53 @@ namespace BatchProcessing.Services
             {
                 Console.WriteLine("No transactions to process.");
             }
+        }
+
+        public async Task CreateOUTFile()
+        {
+            string filePath = "Files\\transactions_output.txt";
+
+            var transactionsToProcess = _transactionProcessesRepository.FindToProcess();
+
+            var lines = transactionsToProcess.Select(trx =>
+                string.Join("000", new[]
+                {
+                    trx.TransactionId.ToString(),
+                    trx.MerchantId,
+                    trx.MerchantName,
+                    trx.MerchantCountry,
+                    trx.MerchantCategoryCode,
+                    trx.CardHolderName,
+                    trx.CardNumberMasked,
+                    trx.CardType,
+                    trx.CustomerId,
+                    trx.Amount.ToString("F2", CultureInfo.InvariantCulture),
+                    trx.AmountLocalCurrency.ToString("F2", CultureInfo.InvariantCulture),
+                    trx.Currency,
+                    trx.LocalCurrency,
+                    trx.ExchangeRate.ToString("F4", CultureInfo.InvariantCulture),
+                    trx.Date.ToString("yyyy-MM-dd"),
+                    trx.PostingDate.ToString("yyyy-MM-dd"),
+                    trx.AuthorizationDate.ToString("yyyy-MM-dd"),
+                    trx.TerminalId,
+                    trx.POSLocation,
+                    trx.POSCountryCode,
+                    trx.EntryMode,
+                    trx.AuthorizationCode,
+                    trx.TransactionType,
+                    trx.Status,
+                    trx.Notes,
+                    trx.ReferenceNumber,
+                    trx.ProcessedDate.ToString("yyyy-MM-dd HH:mm:ss")
+                }));
+
+            File.WriteAllLines(filePath, lines);
+
+            foreach (var trx in transactionsToProcess)
+                trx.IsConciliated = true;
+            
+
+            await _transactionProcessesRepository.SaveChanges();
         }
     }
 

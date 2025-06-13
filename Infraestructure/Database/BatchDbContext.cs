@@ -17,7 +17,9 @@ namespace BatchProcessing.Infraestructure.Database
             modelBuilder.Entity<TransactionRaw>(entity =>
             {
                 entity.HasKey(e => e.TransactionId);
-                entity.Property(e => e.TransactionId).HasColumnName("TransactionId");
+                entity.Property(e => e.TransactionId)
+                .HasColumnName("TransactionId")
+                .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.MerchantId)
                     .IsRequired()
@@ -138,8 +140,13 @@ namespace BatchProcessing.Infraestructure.Database
 
             modelBuilder.Entity<TransactionProcessed>(entity =>
             {
-                entity.HasKey(e => e.TransactionId);
-                entity.Property(e => e.TransactionId).HasColumnName("TransactionId");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Id)
+                      .HasColumnName("Id")
+                      .ValueGeneratedOnAdd();
+
+                entity.Property(e => e.TransactionId)
+                      .HasColumnName("TransactionId");
 
                 entity.Property(e => e.MerchantId)
                     .IsRequired()
@@ -245,6 +252,9 @@ namespace BatchProcessing.Infraestructure.Database
 
                 entity.Property(e => e.IsOfflineTransaction)
                     .HasColumnName("IsOfflineTransaction");
+
+                entity.Property(e => e.IsConciliated)
+                    .HasColumnName("IsConciliated");
 
                 entity.Property(e => e.Notes)
                     .HasColumnType("text")

@@ -3,5 +3,6 @@
     internal interface ITransactionProcessedService<T>
     {
         Task ProcessesTransactions();
+        Task CreateOUTFile();
     }
 }

@@ -14,6 +14,11 @@ namespace BatchProcessing.Repositories
             _context = context;
         }
 
+        public async Task SaveChanges()
+        {
+            await _context.SaveChangesAsync();
+        }
+
         public async Task Save(IEnumerable<TransactionProcessed> transactions)
         {
             if (transactions == null || !transactions.Any())
@@ -22,7 +27,17 @@ namespace BatchProcessing.Repositories
             }
 
             _context.Transactions_PROCESSED.AddRange(transactions);
-             await _context.SaveChangesAsync();
+             await SaveChanges();
+        }
+
+        public IEnumerable<TransactionProcessed> FindToProcess()
+        {
+            var transactionsToProcess = from trx in _context.Transactions_PROCESSED
+                                        where !trx.IsConciliated &&
+                                              trx.ProcessedDate <= DateTime.UtcNow
+                                        select trx;
+
+            return transactionsToProcess;
         }
     }
 }

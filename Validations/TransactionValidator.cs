@@ -5,11 +5,6 @@ public class TransactionValidator : AbstractValidator<TransactionRaw>
 {
     public TransactionValidator()
     {
-        RuleFor(x => x.TransactionId)
-            .NotEmpty()
-            .GreaterThan(0)
-            .WithMessage("Transaction ID must be greater than 0 and cannot be null.");
-
         RuleFor(x => x.MerchantId)
             .NotEmpty()
             .MaximumLength(20)
