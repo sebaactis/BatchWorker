@@ -2,7 +2,7 @@
 {
     internal interface ITransactionProcessedService<T>
     {
-        Task ProcessesTransactions();
-        Task CreateOUTFile();
+        Task<bool> ProcessesTransactions();
+        Task<bool> CreateOUTFile();
     }
 }

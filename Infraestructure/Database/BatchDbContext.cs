@@ -216,6 +216,10 @@ namespace BatchProcessing.Infraestructure.Database
                     .HasColumnType("timestamp without time zone")
                     .HasColumnName("AuthorizationDate");
 
+                entity.Property(e => e.ConciliatedDate)
+                    .HasColumnType("timestamp without time zone")
+                    .HasColumnName("ConciliatedDate");
+
                 entity.Property(e => e.TerminalId)
                     .HasMaxLength(20)
                     .HasColumnName("TerminalId");

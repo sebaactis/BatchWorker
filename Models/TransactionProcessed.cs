@@ -28,6 +28,7 @@
         public DateTime Date { get; set; }
         public DateTime PostingDate { get; set; }
         public DateTime AuthorizationDate { get; set; }
+        public DateTime? ConciliatedDate { get; set; }
 
         // Geolocalización
         public string TerminalId { get; set; }

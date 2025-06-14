@@ -6,20 +6,27 @@ namespace BatchProcessing.Services
 {
     public class TransactionProcessesService : ITransactionProcessedService<TransactionProcessed>
     {
+        private readonly ILogger<Worker> _logger;
         private readonly ITransactionINRepository<TransactionRaw> _transactionINRepository;
         private readonly ITransactionProcessesRepository<TransactionProcessed> _transactionProcessesRepository;
 
-        private List<TransactionProcessed> processedTransactions = new List<TransactionProcessed>();
-
-        public TransactionProcessesService(ITransactionINRepository<TransactionRaw> transactionINRepository, ITransactionProcessesRepository<TransactionProcessed> transactionProcessesRepository)
+        public TransactionProcessesService(ILogger<Worker> logger, ITransactionINRepository<TransactionRaw> transactionINRepository, ITransactionProcessesRepository<TransactionProcessed> transactionProcessesRepository)
         {
+            _logger = logger;
             _transactionINRepository = transactionINRepository;
             _transactionProcessesRepository = transactionProcessesRepository;
         }
 
-        public async Task ProcessesTransactions()
+        public async Task<bool> ProcessesTransactions()
         {
             var transactionsToProcess = _transactionINRepository.FindToProcess();
+            var processedTransactions = new List<TransactionProcessed>();
+
+            if (!transactionsToProcess.Any())
+            {
+                _logger.LogWarning("No se encontraron transacciones para procesar");
+                return false;
+            }
 
             foreach (var trx in transactionsToProcess)
             {
@@ -64,28 +71,49 @@ namespace BatchProcessing.Services
                 }
                 catch (Exception ex)
                 {
-                    // Handle exceptions, log errors, etc.
-                    Console.WriteLine($"Error processing transaction {trx.TransactionId}: {ex.Message}");
+                    _logger.LogError(ex, $"Error procesando la transacción {trx.TransactionId}");
                 }
             }
 
             if (processedTransactions.Any())
             {
-                await _transactionProcessesRepository.Save(processedTransactions);
+                try
+                {
+                    await _transactionProcessesRepository.Save(processedTransactions);
+                    _logger.LogInformation($"Se procesaron correctamente y se guardaron {processedTransactions.Count()} transacciones.");
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Error al guardar las transacciones procesadas");
+                    return false;
+                }
+
             }
             else
             {
-                Console.WriteLine("No transactions to process.");
+                _logger.LogWarning("Ninguna transacción fue procesada correctamente.");
+                return false;
             }
         }
 
-        public async Task CreateOUTFile()
+        public async Task<bool> CreateOUTFile()
         {
+            _logger.LogInformation("Iniciando proceso para generar archivo OUT");
             string filePath = "Files\\transactions_output.txt";
 
             var transactionsToProcess = _transactionProcessesRepository.FindToProcess();
 
-            var lines = transactionsToProcess.Select(trx =>
+            if (!transactionsToProcess.Any())
+            {
+                Console.WriteLine(transactionsToProcess.Count());
+                _logger.LogWarning("No hay transacciones para procesar en el archivo OUT");
+                return false;
+            }
+
+            try
+            {
+                var lines = transactionsToProcess.Select(trx =>
                 string.Join("000", new[]
                 {
                     trx.TransactionId.ToString(),
@@ -115,16 +143,30 @@ namespace BatchProcessing.Services
                     trx.Notes,
                     trx.ReferenceNumber,
                     trx.ProcessedDate.ToString("yyyy-MM-dd HH:mm:ss")
-                }));
+                })).ToList();
 
-            File.WriteAllLines(filePath, lines);
+                File.WriteAllLines(filePath, lines);
 
-            foreach (var trx in transactionsToProcess)
-                trx.IsConciliated = true;
-            
+                _logger.LogInformation("Archivo OUT generado correctamente en: {filePath}", filePath);
 
-            await _transactionProcessesRepository.SaveChanges();
+                foreach (var trx in transactionsToProcess)
+                {
+                    trx.IsConciliated = true;
+                    trx.ConciliatedDate = DateTime.Now;
+                }
+
+                await _transactionProcessesRepository.SaveChanges();
+
+                _logger.LogInformation("Transacciones marcadas como conciliadas correctamente.");
+                _logger.LogInformation($"Cantidad de transaccion conciliadas: {lines.Count()}");
+                return true;
+            }
+
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error durante la creacion del archivo OUT");
+                return false;
+            }
         }
     }
-
 }

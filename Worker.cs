@@ -22,7 +22,7 @@ namespace BatchProcessing
             var timer = new Stopwatch();
             timer.Start();
 
-            _logger.LogInformation("Worker started at: {time}", DateTimeOffset.Now);
+            _logger.LogInformation("El worker empezo a las: {time}", DateTimeOffset.Now);
 
             using (var scope = _serviceProvider.CreateScope())
             {
@@ -36,6 +36,7 @@ namespace BatchProcessing
 
                 var validList = new List<TransactionRaw>();
 
+                // Validamos las transacciones para procesarlas.
                 foreach (var transaction in transactions)
                 {
                     _logger.LogInformation($"Procesando la transaccion numero: {transactionCount}");
@@ -62,7 +63,7 @@ namespace BatchProcessing
 
                         foreach (var error in transactionErrors)
                         {
-                            _logger.LogError($"No se pudo grabar la transaccion con ID: {transaction.TransactionId}: Error: {error}");
+                            _logger.LogError($"No se pudo grabar la transaccion numero: {transactionCount}: Error: {error}");
                         }
 
                         transactionsFailed++;
@@ -71,6 +72,7 @@ namespace BatchProcessing
                     Thread.Sleep(50);
                 }
 
+                // Guardamos las transacciones validas en la base de datos.
                 if (validList.Any())
                 {
                     try
@@ -84,21 +86,42 @@ namespace BatchProcessing
                     }
                 }
 
-                _logger.LogInformation($"Transactions process successfully: {transactionsSuccess}");
+                _logger.LogInformation($"Transacciones procesadas correctamente: {transactionsSuccess}");
 
                 if (transactionsFailed > 0)
                 {
-                    _logger.LogWarning($"Transactions with errors:  {transactionsFailed}");
+                    _logger.LogWarning($"Transacciones con errores:  {transactionsFailed}");
                 }
 
-                await processesService.ProcessesTransactions();
-                processesService.CreateOUTFile();
+                // Proceso de transaccion de Transactions_IN a Transactions_Processed
+                var processTransactions = await processesService.ProcessesTransactions();
+
+                if (processTransactions)
+                {
+                    _logger.LogInformation("El proceso de transacciones finalizó correctamente.");
+                }
+                else
+                {
+                    _logger.LogWarning("El proceso de transacciones no se completó con éxito.");
+                }
+
+                // Generamos el archivo de salida.
+                var OutFileCreationProcess = await processesService.CreateOUTFile();
+
+                if (OutFileCreationProcess)
+                {
+                    _logger.LogInformation("El archivo OUT se generó correctamente.");
+                }
+                else
+                {
+                    _logger.LogWarning("No se pudo generar el archivo OUT.");
+                }
             }
 
             timer.Stop();
 
-            _logger.LogInformation("Worker finished processing transactions at: {time}", DateTimeOffset.Now);
-            _logger.LogInformation($"Process finished in {timer}");
+            _logger.LogInformation("El worker de presentacion de transacciones termino en el tiempo de: {time}", DateTimeOffset.Now);
+            _logger.LogInformation($"Proceso terminado en {timer}");
 
         }
     }
