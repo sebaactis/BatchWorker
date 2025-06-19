@@ -19,6 +19,7 @@ builder.Services.AddScoped<ITransactionINService<TransactionRaw>, TransactionINS
 builder.Services.AddScoped<ITransactionProcessedService<TransactionProcessed>, TransactionProcessesService>();
 builder.Services.AddScoped<ITransactionINRepository<TransactionRaw>, TransactionINRepository>();
 builder.Services.AddScoped<ITransactionProcessesRepository<TransactionProcessed>, TransactionProcessesRepository>();
+builder.Services.AddScoped<ILoggerFileService, LoggerFileService>();
 
 builder.Services.AddHostedService<Worker>();
 

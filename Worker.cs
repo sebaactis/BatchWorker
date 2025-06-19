@@ -1,3 +1,4 @@
+using BatchProcessing.Enums;
 using BatchProcessing.Interfaces;
 using BatchProcessing.Models;
 using System.Diagnostics;
@@ -7,39 +8,38 @@ namespace BatchProcessing
     public class Worker : BackgroundService
     {
         private long transactionsSuccess, transactionsFailed, transactionCount = 1;
-        private readonly ILogger<Worker> _logger;
         private readonly IServiceProvider _serviceProvider;
 
 
-        public Worker(ILogger<Worker> logger, IServiceProvider serviceProvider)
+        public Worker(IServiceProvider serviceProvider)
         {
-            _logger = logger;
             _serviceProvider = serviceProvider;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            var timer = new Stopwatch();
-            timer.Start();
-
-            _logger.LogInformation("El worker empezo a las: {time}", DateTimeOffset.Now);
-
             using (var scope = _serviceProvider.CreateScope())
             {
+                var timer = new Stopwatch();
+                timer.Start();
+
                 var reader = scope.ServiceProvider.GetRequiredService<IFileReader<TransactionRaw>>();
                 var validator = scope.ServiceProvider.GetRequiredService<ITransactionValidator>();
                 var transactionINService = scope.ServiceProvider.GetRequiredService<ITransactionINService<TransactionRaw>>();
                 var processesService = scope.ServiceProvider.GetRequiredService<ITransactionProcessedService<TransactionProcessed>>();
+                var loggerFileService = scope.ServiceProvider.GetRequiredService<ILoggerFileService>();
                 var transactions = reader.Read();
 
-                _logger.LogInformation($"Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: {transactions.Count()}");
+                loggerFileService.Log($"El worker empezo a las {DateTime.Now.ToString("dd-MM-yyyy:HH:mm:ss")}", LogLevelCustom.Info, "");
+                loggerFileService.Log($"Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: {transactions.Count()}", LogLevelCustom.Info, "");
+
 
                 var validList = new List<TransactionRaw>();
 
                 // Validamos las transacciones para procesarlas.
                 foreach (var transaction in transactions)
                 {
-                    _logger.LogInformation($"Procesando la transaccion numero: {transactionCount}");
+                    loggerFileService.Log($"Procesando la transaccion numero: {transactionCount}", LogLevelCustom.Info, "TRANSACTIONS_IN");
 
                     var validateTransaction = validator.Validate(new[] { transaction });
 
@@ -47,10 +47,10 @@ namespace BatchProcessing
                     {
                         validList.Add(transaction);
 
-                        _logger.LogInformation($"Transaction Masked Card: {transaction.CardNumberMasked} | " +
+                        loggerFileService.Log($"Transaction Masked Card: {transaction.CardNumberMasked} | " +
                                                $"Merchant ID: {transaction.MerchantId} | " +
                                                $"Amount: {transaction.Amount} {transaction.Currency} | " +
-                                               $"Date: {transaction.Date}");
+                                               $"Date: {transaction.Date}", LogLevelCustom.Info, "TRANSACTIONS_IN");
                         transactionsSuccess++;
                         transactionCount++;
                     }
@@ -63,7 +63,7 @@ namespace BatchProcessing
 
                         foreach (var error in transactionErrors)
                         {
-                            _logger.LogError($"No se pudo grabar la transaccion numero: {transactionCount}: Error: {error}");
+                            loggerFileService.Log($"No se pudo grabar la transaccion numero: {transactionCount}: Error: {error}", LogLevelCustom.Warning, "TRANSACTIONS_IN");
                         }
 
                         transactionsFailed++;
@@ -78,19 +78,19 @@ namespace BatchProcessing
                     try
                     {
                         await transactionINService.Save(validList, CancellationToken.None);
-                        _logger.LogInformation($"Transacciones validas guardadas correctamente: {validList.Count}");
+                        loggerFileService.Log($"Transacciones validas guardadas correctamente: {validList.Count}", LogLevelCustom.Info, "TRANSACTIONS_IN");
                     }
                     catch (Exception ex)
                     {
-                        _logger.LogError(ex, "Error al guardar las transacciones validas");
+                        loggerFileService.Log($"Error al guardar las transacciones validas: {ex}", LogLevelCustom.Error, "TRANSACTIONS_IN");
                     }
                 }
 
-                _logger.LogInformation($"Transacciones procesadas correctamente: {transactionsSuccess}");
+                loggerFileService.Log($"Transacciones procesadas correctamente: {transactionsSuccess}", LogLevelCustom.Info, "TRANSACTIONS_IN");
 
                 if (transactionsFailed > 0)
                 {
-                    _logger.LogWarning($"Transacciones con errores:  {transactionsFailed}");
+                    loggerFileService.Log($"Transacciones procesadas correctamente: {transactionsSuccess}", LogLevelCustom.Warning, "TRANSACTIONS_IN");
                 }
 
                 // Proceso de transaccion de Transactions_IN a Transactions_Processed
@@ -98,11 +98,11 @@ namespace BatchProcessing
 
                 if (processTransactions)
                 {
-                    _logger.LogInformation("El proceso de transacciones finalizó correctamente.");
+                    loggerFileService.Log("El proceso de transacciones finalizó correctamente.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED");
                 }
                 else
                 {
-                    _logger.LogWarning("El proceso de transacciones no se completó con éxito.");
+                    loggerFileService.Log("El proceso de transacciones no se completó con éxito.", LogLevelCustom.Warning, "TRANSACTIONS_PROCESSED");
                 }
 
                 // Generamos el archivo de salida.
@@ -110,19 +110,17 @@ namespace BatchProcessing
 
                 if (OutFileCreationProcess)
                 {
-                    _logger.LogInformation("El archivo OUT se generó correctamente.");
+                    loggerFileService.Log("El archivo OUT se generó correctamente.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
                 }
                 else
                 {
-                    _logger.LogWarning("No se pudo generar el archivo OUT.");
+                    loggerFileService.Log("No se pudo generar el archivo OUT.", LogLevelCustom.Error, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
                 }
+
+                timer.Stop();
+                loggerFileService.Log($"El worker de presentacion de transacciones termino a las: {DateTime.Now.ToString("dd-MM-yyyy:HH:mm:ss")}", LogLevelCustom.Info, "");
+                loggerFileService.Log($"Proceso terminado en {timer}", LogLevelCustom.Info, "");
             }
-
-            timer.Stop();
-
-            _logger.LogInformation("El worker de presentacion de transacciones termino en el tiempo de: {time}", DateTimeOffset.Now);
-            _logger.LogInformation($"Proceso terminado en {timer}");
-
         }
     }
 }
