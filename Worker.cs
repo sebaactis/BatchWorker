@@ -9,10 +9,12 @@ namespace BatchProcessing
     {
         private long transactionsSuccess, transactionsFailed, transactionCount = 1;
         private readonly IServiceProvider _serviceProvider;
+        private readonly IConfiguration _configuration;
 
 
-        public Worker(IServiceProvider serviceProvider)
+        public Worker(IServiceProvider serviceProvider, IConfiguration configuration)
         {
+            _configuration = configuration;
             _serviceProvider = serviceProvider;
         }
 
@@ -69,7 +71,8 @@ namespace BatchProcessing
                         transactionsFailed++;
                         transactionCount++;
                     }
-                    Thread.Sleep(50);
+
+                    await Task.Delay(50);
                 }
 
                 // Guardamos las transacciones validas en la base de datos.
@@ -93,29 +96,36 @@ namespace BatchProcessing
                     loggerFileService.Log($"Transacciones procesadas correctamente: {transactionsSuccess}", LogLevelCustom.Warning, "TRANSACTIONS_IN");
                 }
 
-                // Proceso de transaccion de Transactions_IN a Transactions_Processed
-                var processTransactions = await processesService.ProcessesTransactions();
+                if (_configuration.GetValue<bool>("ProcessingTransactions"))
+                {
+                    // Proceso de transaccion de Transactions_IN a Transactions_Processed
+                    var processTransactions = await processesService.ProcessesTransactions();
 
-                if (processTransactions)
-                {
-                    loggerFileService.Log("El proceso de transacciones finalizó correctamente.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED");
-                }
-                else
-                {
-                    loggerFileService.Log("El proceso de transacciones no se completó con éxito.", LogLevelCustom.Warning, "TRANSACTIONS_PROCESSED");
+                    if (processTransactions)
+                    {
+                        loggerFileService.Log("El proceso de transacciones finalizó correctamente.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED");
+                    }
+                    else
+                    {
+                        loggerFileService.Log("El proceso de transacciones no se completó con éxito.", LogLevelCustom.Warning, "TRANSACTIONS_PROCESSED");
+                    }
                 }
 
-                // Generamos el archivo de salida.
-                var OutFileCreationProcess = await processesService.CreateOUTFile();
+                if (_configuration.GetValue<bool>("GenerateOUTFile"))
+                {
+                    // Generamos el archivo de salida.
+                    var OutFileCreationProcess = await processesService.CreateOUTFile();
 
-                if (OutFileCreationProcess)
-                {
-                    loggerFileService.Log("El archivo OUT se generó correctamente.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
+                    if (OutFileCreationProcess)
+                    {
+                        loggerFileService.Log("El archivo OUT se generó correctamente.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
+                    }
+                    else
+                    {
+                        loggerFileService.Log("No se pudo generar el archivo OUT.", LogLevelCustom.Error, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
+                    }
                 }
-                else
-                {
-                    loggerFileService.Log("No se pudo generar el archivo OUT.", LogLevelCustom.Error, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
-                }
+
 
                 timer.Stop();
                 loggerFileService.Log($"El worker de presentacion de transacciones termino a las: {DateTime.Now.ToString("dd-MM-yyyy:HH:mm:ss")}", LogLevelCustom.Info, "");

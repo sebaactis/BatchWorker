@@ -48,3 +48,963 @@ Fecha: 19-06-2025:01:09:48 /// Nivel:  INFO /// Mensaje: Transaccion procesada O
 Fecha: 19-06-2025:01:09:48 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2507 
 Fecha: 19-06-2025:01:09:48 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 48 transacciones. 
 Fecha: 19-06-2025:01:09:48 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2662 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2664 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2669 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2671 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2676 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2679 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2681 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2685 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2686 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2688 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2689 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2696 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2702 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2713 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2728 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2735 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 19-06-2025:11:13:46 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2662 
+Fecha: 19-06-2025:11:13:47 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2662: System.Exception: Error al guardar los cambios en la base de datos
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT t."TransactionId", t."Amount", t."AmountLocalCurrency", t."AuthorizationCode", t."AuthorizationDate", t."CardHolderName", t."CardNumberMasked", t."CardType", t."Currency", t."CustomerId", t."Date", t."EntryMode", t."ExchangeRate", t."IsFraudSuspected", t."IsInternational", t."IsOfflineTransaction", t."IsProcessed", t."LocalCurrency", t."MerchantCategoryCode", t."MerchantCountry", t."MerchantId", t."MerchantName", t."Notes", t."POSCountryCode", t."POSLocation", t."PostingDate", t."ReferenceNumber", t."Status", t."TerminalId", t."TransactionType"
+FROM "TRANSACTIONS_IN" AS t
+WHERE NOT (t."IsProcessed") AND t."Status" = 'Approved'
+   at Npgsql.ThrowHelper.ThrowNpgsqlOperationInProgressException(NpgsqlCommand command)
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|282_0(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:47 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2664 
+Fecha: 19-06-2025:11:13:47 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2664: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:47 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2669 
+Fecha: 19-06-2025:11:13:48 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2669: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:48 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2671 
+Fecha: 19-06-2025:11:13:48 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2671: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:48 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2676 
+Fecha: 19-06-2025:11:13:49 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2676: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:49 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2679 
+Fecha: 19-06-2025:11:13:49 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2679: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:49 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2681 
+Fecha: 19-06-2025:11:13:50 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2681: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:50 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2685 
+Fecha: 19-06-2025:11:13:50 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2685: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:50 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2686 
+Fecha: 19-06-2025:11:13:51 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2686: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2688 
+Fecha: 19-06-2025:11:13:51 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2688: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2689 
+Fecha: 19-06-2025:11:13:51 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2689: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2696 
+Fecha: 19-06-2025:11:13:52 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2696: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:52 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2702 
+Fecha: 19-06-2025:11:13:52 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2702: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:52 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2713 
+Fecha: 19-06-2025:11:13:53 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2713: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2728 
+Fecha: 19-06-2025:11:13:53 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2728: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2735 
+Fecha: 19-06-2025:11:13:54 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2735: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:54 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2738 
+Fecha: 19-06-2025:11:13:54 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2738: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:54 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2740 
+Fecha: 19-06-2025:11:13:55 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2740: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:55 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2745 
+Fecha: 19-06-2025:11:13:55 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2745: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:55 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2747 
+Fecha: 19-06-2025:11:13:56 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2747: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:56 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2752 
+Fecha: 19-06-2025:11:13:56 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2752: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:56 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2755 
+Fecha: 19-06-2025:11:13:57 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2755: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:57 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2757 
+Fecha: 19-06-2025:11:13:57 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2757: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:57 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2761 
+Fecha: 19-06-2025:11:13:58 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2761: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2762 
+Fecha: 19-06-2025:11:13:58 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2762: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2764 
+Fecha: 19-06-2025:11:13:58 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2764: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2765 
+Fecha: 19-06-2025:11:13:59 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2765: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2772 
+Fecha: 19-06-2025:11:13:59 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2772: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:13:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2778 
+Fecha: 19-06-2025:11:14:00 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2778: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:14:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2789 
+Fecha: 19-06-2025:11:14:00 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2789: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:14:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2804 
+Fecha: 19-06-2025:11:14:01 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2804: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:14:01 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2811 
+Fecha: 19-06-2025:11:14:01 /// Nivel:  ERROR /// Mensaje: Error procesando la transacción 2811: System.Exception: Error al guardar los cambios en la base de datos
+ ---> System.InvalidOperationException: Connection is busy
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlConnection.CheckReady()
+   at Npgsql.NpgsqlConnection.BeginTransaction(Boolean async, IsolationLevel level, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.BeginDbTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 32
+   --- End of inner exception stack trace ---
+   at BatchProcessing.Repositories.TransactionINRepository.SaveChangesAsync() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Repositories\TransactionINRepository.cs:line 36
+   at BatchProcessing.Services.TransactionProcessesService.ProcessesTransactions() in D:\Descargas\Seba\Proyects\C#\BatchProcessing\Services\TransactionProcessesService.cs:line 75 
+Fecha: 19-06-2025:11:14:01 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 32 transacciones. 
+Fecha: 19-06-2025:11:14:01 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2814 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2816 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2821 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2823 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2828 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2831 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2833 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2837 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2838 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2840 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2841 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2848 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2854 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2865 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2880 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2887 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2890 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2892 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2897 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2899 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2904 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2907 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2909 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2913 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2914 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2916 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2917 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2924 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2930 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2941 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2956 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2963 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2966 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2968 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2973 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2975 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2980 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2983 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2985 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2989 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2990 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2992 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 2993 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3000 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3006 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3017 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3032 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3039 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 32 transacciones. 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3118 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3120 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3125 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3127 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3132 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3135 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3137 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3141 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3142 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3144 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3145 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3152 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3158 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3169 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3184 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3191 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3194 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3196 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3201 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3203 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3208 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3211 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3213 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3217 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3218 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3220 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3221 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3228 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3234 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3245 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3260 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3267 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 32 transacciones. 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3272 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3277 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3279 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3284 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3287 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3289 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3293 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3294 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3296 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3297 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3270 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3304 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3310 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3321 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3336 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3343 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3346 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3348 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3353 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3355 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3360 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3363 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3365 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3369 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3370 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3372 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3373 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3380 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3386 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3397 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3412 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3419 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 32 transacciones. 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3500 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3505 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3507 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3512 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3515 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3517 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3521 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3522 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3524 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3525 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3498 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3532 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3538 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3549 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3564 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3571 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3574 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3576 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3581 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3583 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3588 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3591 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3593 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3597 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3598 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3600 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3601 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3608 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3614 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3625 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3640 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3647 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 32 transacciones. 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3652 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3657 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3659 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3664 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3667 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3669 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3673 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3674 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3676 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3677 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  WARNING /// Mensaje: Error de validación en transacción -1: Transaction ID must be greater than 0 and cannot be null. 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3684 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3690 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3701 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3716 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3723 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3726 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3728 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3733 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3735 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3740 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3743 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3745 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3749 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3750 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3752 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3753 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3760 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3766 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3777 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3792 
+Fecha: 19-06-2025:11:51:18 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3799 
+Fecha: 19-06-2025:11:51:19 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 31 transacciones. 
+Fecha: 19-06-2025:11:51:19 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  WARNING /// Mensaje: Error de validación en transacción -1: Transaction ID must be greater than 0 and cannot be null. 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  WARNING /// Mensaje: Error de validación en transacción -1: Transaction ID must be greater than 0 and cannot be null. 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  WARNING /// Mensaje: Error de validación en transacción -1: Transaction ID must be greater than 0 and cannot be null. 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  ERROR /// Mensaje: Transacción inválida permanentemente tras 3 intentos. ID: -1 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3802 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3804 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3809 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3811 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3816 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3819 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3821 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3825 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3826 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3828 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3829 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3836 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3842 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3853 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3868 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3875 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3878 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3880 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3885 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3887 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3892 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3895 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3897 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3901 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3902 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3904 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3905 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3912 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3918 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3929 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3944 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3951 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 

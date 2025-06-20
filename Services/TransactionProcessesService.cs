@@ -1,6 +1,7 @@
 ﻿using BatchProcessing.Enums;
 using BatchProcessing.Interfaces;
 using BatchProcessing.Models;
+using FluentValidation;
 using System.Globalization;
 
 namespace BatchProcessing.Services
@@ -10,9 +11,11 @@ namespace BatchProcessing.Services
         private readonly ILoggerFileService _loggerFileService;
         private readonly ITransactionINRepository<TransactionRaw> _transactionINRepository;
         private readonly ITransactionProcessesRepository<TransactionProcessed> _transactionProcessesRepository;
+        private readonly IValidator<TransactionProcessed> _validator;
 
-        public TransactionProcessesService(ILoggerFileService loggerFileService, ITransactionINRepository<TransactionRaw> transactionINRepository, ITransactionProcessesRepository<TransactionProcessed> transactionProcessesRepository)
+        public TransactionProcessesService(ILoggerFileService loggerFileService, ITransactionINRepository<TransactionRaw> transactionINRepository, ITransactionProcessesRepository<TransactionProcessed> transactionProcessesRepository, IValidator<TransactionProcessed> validator)
         {
+            _validator = validator;
             _loggerFileService = loggerFileService;
             _transactionINRepository = transactionINRepository;
             _transactionProcessesRepository = transactionProcessesRepository;
@@ -31,51 +34,103 @@ namespace BatchProcessing.Services
 
             foreach (var trx in transactionsToProcess)
             {
-                try
-                {
-                    var processed = new TransactionProcessed
-                    {
-                        TransactionId = trx.TransactionId,
-                        MerchantId = trx.MerchantId,
-                        MerchantName = trx.MerchantName,
-                        MerchantCountry = trx.MerchantCountry,
-                        MerchantCategoryCode = trx.MerchantCategoryCode,
-                        CardHolderName = trx.CardHolderName,
-                        CardNumberMasked = trx.CardNumberMasked,
-                        CardType = trx.CardType,
-                        CustomerId = trx.CustomerId,
-                        Amount = trx.Amount,
-                        AmountLocalCurrency = trx.AmountLocalCurrency,
-                        LocalCurrency = trx.LocalCurrency,
-                        Currency = trx.Currency,
-                        ExchangeRate = trx.ExchangeRate,
-                        Date = trx.Date,
-                        PostingDate = trx.PostingDate,
-                        AuthorizationDate = trx.AuthorizationDate,
-                        TerminalId = trx.TerminalId,
-                        POSLocation = trx.POSLocation,
-                        POSCountryCode = trx.POSCountryCode,
-                        EntryMode = trx.EntryMode,
-                        AuthorizationCode = trx.AuthorizationCode,
-                        TransactionType = trx.TransactionType,
-                        Status = trx.Status,
-                        IsInternational = trx.IsInternational,
-                        IsFraudSuspected = trx.IsFraudSuspected,
-                        IsOfflineTransaction = trx.IsOfflineTransaction,
-                        IsConciliated = false,
-                        Notes = trx.Notes,
-                        ReferenceNumber = trx.ReferenceNumber,
-                        ProcessedDate = DateTime.UtcNow
-                    };
+                int attempt = 0;
+                bool success = false;
 
-                    processedTransactions.Add(processed);
-                    _loggerFileService.Log($"Transaccion procesada OK: {processed.TransactionId}", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED");
-                }
-                catch (Exception ex)
+                while (attempt < 3 && !success)
                 {
-                    _loggerFileService.Log($"Error procesando la transacción {trx.TransactionId}: {ex}", LogLevelCustom.Error, "TRANSACTIONS_PROCESSED");
+                    try
+                    {
+                        var processed = new TransactionProcessed
+                        {
+                            TransactionId = trx.TransactionId,
+                            MerchantId = trx.MerchantId,
+                            MerchantName = trx.MerchantName,
+                            MerchantCountry = trx.MerchantCountry,
+                            MerchantCategoryCode = trx.MerchantCategoryCode,
+                            CardHolderName = trx.CardHolderName,
+                            CardNumberMasked = trx.CardNumberMasked,
+                            CardType = trx.CardType,
+                            CustomerId = trx.CustomerId,
+                            Amount = trx.Amount,
+                            AmountLocalCurrency = trx.AmountLocalCurrency,
+                            LocalCurrency = trx.LocalCurrency,
+                            Currency = trx.Currency,
+                            ExchangeRate = trx.ExchangeRate,
+                            Date = trx.Date,
+                            PostingDate = trx.PostingDate,
+                            AuthorizationDate = trx.AuthorizationDate,
+                            TerminalId = trx.TerminalId,
+                            POSLocation = trx.POSLocation,
+                            POSCountryCode = trx.POSCountryCode,
+                            EntryMode = trx.EntryMode,
+                            AuthorizationCode = trx.AuthorizationCode,
+                            TransactionType = trx.TransactionType,
+                            Status = trx.Status,
+                            IsInternational = trx.IsInternational,
+                            IsFraudSuspected = trx.IsFraudSuspected,
+                            IsOfflineTransaction = trx.IsOfflineTransaction,
+                            IsConciliated = false,
+                            Notes = trx.Notes,
+                            ReferenceNumber = trx.ReferenceNumber,
+                            ProcessedDate = DateTime.UtcNow
+                        };
+
+                        var validationResult = _validator.Validate(processed);
+
+                        if (!validationResult.IsValid)
+                        {
+                            foreach (var error in validationResult.Errors)
+                            {
+                                _loggerFileService.Log(
+                                    $"Error de validación en transacción {trx.TransactionId}: {error.ErrorMessage}",
+                                    LogLevelCustom.Warning,
+                                    "TRANSACTIONS_PROCESSED"
+                                );
+                            }
+
+                            attempt++;
+                            trx.RetryCount++;
+
+                            if (attempt >= 3)
+                            {
+                                trx.FailedPermanently = true;
+                                _loggerFileService.Log($"Transacción inválida permanentemente tras 3 intentos. ID: {trx.TransactionId}",
+                                                       LogLevelCustom.Error,
+                                                       "TRANSACTIONS_PROCESSED");
+                            }
+
+                            continue;
+                        }
+
+                        processedTransactions.Add(processed);
+                        _loggerFileService.Log($"Transaccion procesada OK: {processed.TransactionId}", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED");
+
+                        trx.IsProcessed = true;
+                        success = true;
+                    }
+                    catch (Exception ex)
+                    {
+                        attempt++;
+                        trx.RetryCount++;
+
+                        _loggerFileService.Log($"Intento {attempt} fallido para transacción {trx.TransactionId}. Error: {ex.Message}",
+                                               LogLevelCustom.Warning,
+                                               "TRANSACTIONS_PROCESSED");
+
+                        if (attempt >= 3)
+                        {
+                            trx.FailedPermanently = true;
+                            _loggerFileService.Log($"Transacción {trx.TransactionId} ha fallado 3 veces, se marca como fallida permanentemente",
+                                                   LogLevelCustom.Error,
+                                                   "TRANSACTIONS_PROCESSED");
+                        }
+                    }
                 }
+
             }
+
+            await _transactionINRepository.SaveChangesAsync();
 
             if (processedTransactions.Any())
             {

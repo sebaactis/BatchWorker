@@ -136,6 +136,13 @@ namespace BatchProcessing.Infraestructure.Database
                 entity.Property(e => e.ReferenceNumber)
                     .HasMaxLength(50)
                     .HasColumnName("ReferenceNumber");
+
+                entity.Property(e => e.RetryCount)
+                    .HasDefaultValue(0)
+                    .HasColumnName("RetryCount");
+
+                entity.Property(e => e.FailedPermanently)
+                    .HasColumnName("FailedPermanently");
             });
 
             modelBuilder.Entity<TransactionProcessed>(entity =>

@@ -3,3 +3,53 @@ Fecha: 19-06-2025:01:09:48 /// Nivel:  INFO /// Mensaje: Archivo OUT generado co
 Fecha: 19-06-2025:01:09:48 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
 Fecha: 19-06-2025:01:09:48 /// Nivel:  INFO /// Mensaje: Cantidad de transaccion conciliadas: 48 
 Fecha: 19-06-2025:01:09:48 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 19-06-2025:11:19:30 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:19:30 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 19-06-2025:11:19:31 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 19-06-2025:11:19:31 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 32 
+Fecha: 19-06-2025:11:19:31 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 19-06-2025:11:34:45 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:34:46 /// Nivel:  WARNING /// Mensaje: No hay transacciones para procesar en el archivo OUT 
+Fecha: 19-06-2025:11:34:46 /// Nivel:  ERROR /// Mensaje: No se pudo generar el archivo OUT. 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 32 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 19-06-2025:11:36:10 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:36:10 /// Nivel:  WARNING /// Mensaje: No hay transacciones para procesar en el archivo OUT 
+Fecha: 19-06-2025:11:36:10 /// Nivel:  ERROR /// Mensaje: No se pudo generar el archivo OUT. 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 32 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 19-06-2025:11:47:22 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:47:23 /// Nivel:  WARNING /// Mensaje: No hay transacciones para procesar en el archivo OUT 
+Fecha: 19-06-2025:11:47:23 /// Nivel:  ERROR /// Mensaje: No se pudo generar el archivo OUT. 
+Fecha: 19-06-2025:11:47:48 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:47:49 /// Nivel:  WARNING /// Mensaje: No hay transacciones para procesar en el archivo OUT 
+Fecha: 19-06-2025:11:47:49 /// Nivel:  ERROR /// Mensaje: No se pudo generar el archivo OUT. 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 32 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 19-06-2025:11:50:44 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:50:44 /// Nivel:  WARNING /// Mensaje: No hay transacciones para procesar en el archivo OUT 
+Fecha: 19-06-2025:11:50:44 /// Nivel:  ERROR /// Mensaje: No se pudo generar el archivo OUT. 
+Fecha: 19-06-2025:11:51:19 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:51:19 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 19-06-2025:11:51:19 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 19-06-2025:11:51:19 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 31 
+Fecha: 19-06-2025:11:51:19 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 19-06-2025:11:56:27 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 19-06-2025:11:56:28 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 19-06-2025:11:56:28 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 19-06-2025:11:56:28 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 

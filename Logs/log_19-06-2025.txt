@@ -2,3 +2,79 @@ Fecha: 19-06-2025:01:09:40 /// Nivel:  INFO /// Mensaje: El worker empezo a las 
 Fecha: 19-06-2025:01:09:40 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
 Fecha: 19-06-2025:01:09:48 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:13:09:48 
 Fecha: 19-06-2025:01:09:48 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.1057355 
+Fecha: 19-06-2025:11:05:57 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:05:57 
+Fecha: 19-06-2025:11:05:57 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:06:04 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:06:04 
+Fecha: 19-06-2025:11:06:04 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.4637331 
+Fecha: 19-06-2025:11:07:25 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:07:25 
+Fecha: 19-06-2025:11:07:25 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:07:32 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:07:32 
+Fecha: 19-06-2025:11:07:32 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:07.6712967 
+Fecha: 19-06-2025:11:09:11 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:09:11 
+Fecha: 19-06-2025:11:09:11 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:09:18 
+Fecha: 19-06-2025:11:09:18 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:07.7902438 
+Fecha: 19-06-2025:11:13:38 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:13:38 
+Fecha: 19-06-2025:11:13:38 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:14:01 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:14:01 
+Fecha: 19-06-2025:11:14:01 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:23.4485096 
+Fecha: 19-06-2025:11:16:18 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:16:18 
+Fecha: 19-06-2025:11:16:18 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:16:26 
+Fecha: 19-06-2025:11:16:26 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:07.8468918 
+Fecha: 19-06-2025:11:17:31 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:17:31 
+Fecha: 19-06-2025:11:17:31 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:17:39 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:17:39 
+Fecha: 19-06-2025:11:17:39 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:07.4897677 
+Fecha: 19-06-2025:11:18:05 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:18:05 
+Fecha: 19-06-2025:11:18:05 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:18:13 
+Fecha: 19-06-2025:11:18:13 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:07.9937201 
+Fecha: 19-06-2025:11:19:23 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:19:23 
+Fecha: 19-06-2025:11:19:23 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:19:31 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:19:31 
+Fecha: 19-06-2025:11:19:31 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:07.9004999 
+Fecha: 19-06-2025:11:34:38 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:34:38 
+Fecha: 19-06-2025:11:34:38 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:34:46 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:34:46 
+Fecha: 19-06-2025:11:34:46 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:07.8942725 
+Fecha: 19-06-2025:11:35:27 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:35:27 
+Fecha: 19-06-2025:11:35:27 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:35:35 
+Fecha: 19-06-2025:11:35:35 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.0937544 
+Fecha: 19-06-2025:11:36:02 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:36:02 
+Fecha: 19-06-2025:11:36:02 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:36:10 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:36:10 
+Fecha: 19-06-2025:11:36:10 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.3083829 
+Fecha: 19-06-2025:11:37:04 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:37:04 
+Fecha: 19-06-2025:11:37:04 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:37:12 
+Fecha: 19-06-2025:11:37:12 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.7503339 
+Fecha: 19-06-2025:11:47:15 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:47:15 
+Fecha: 19-06-2025:11:47:15 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:47:23 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:47:23 
+Fecha: 19-06-2025:11:47:23 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.1600725 
+Fecha: 19-06-2025:11:47:41 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:47:41 
+Fecha: 19-06-2025:11:47:41 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:47:49 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:47:49 
+Fecha: 19-06-2025:11:47:49 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.1778663 
+Fecha: 19-06-2025:11:48:32 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:48:32 
+Fecha: 19-06-2025:11:48:32 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:48:40 
+Fecha: 19-06-2025:11:48:40 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.3452830 
+Fecha: 19-06-2025:11:50:36 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:50:36 
+Fecha: 19-06-2025:11:50:36 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:50:44 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:50:44 
+Fecha: 19-06-2025:11:50:44 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.4501716 
+Fecha: 19-06-2025:11:51:11 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:51:11 
+Fecha: 19-06-2025:11:51:11 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:51:19 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:51:19 
+Fecha: 19-06-2025:11:51:19 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.6032197 
+Fecha: 19-06-2025:11:55:51 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:55:51 
+Fecha: 19-06-2025:11:55:51 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:55:59 
+Fecha: 19-06-2025:11:55:59 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.1118443 
+Fecha: 19-06-2025:11:56:20 /// Nivel:  INFO /// Mensaje: El worker empezo a las 19-06-2025:23:56:20 
+Fecha: 19-06-2025:11:56:20 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 19-06-2025:11:56:28 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 19-06-2025:23:56:28 
+Fecha: 19-06-2025:11:56:28 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.1739621 
