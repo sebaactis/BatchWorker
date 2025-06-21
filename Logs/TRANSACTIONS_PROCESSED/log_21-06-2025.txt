@@ -1,0 +1,90 @@
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3954 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3956 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3961 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3963 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3968 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3971 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3973 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3977 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3978 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3980 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3981 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3988 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 3994 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4005 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4020 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4027 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 21-06-2025:04:34:17 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4030 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4032 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4037 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4039 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4044 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4047 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4049 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4053 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4054 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4056 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4057 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4064 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4070 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4081 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4096 
+Fecha: 21-06-2025:04:37:15 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4103 
+Fecha: 21-06-2025:04:37:16 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 21-06-2025:04:37:16 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4106 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4108 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4113 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4115 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4120 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4123 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4125 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4129 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4130 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4132 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4133 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4140 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4146 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4157 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4172 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4179 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 21-06-2025:04:38:51 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4182 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4184 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4189 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4191 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4196 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4199 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4201 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4205 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4206 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4208 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4209 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4216 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4222 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4233 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4248 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4255 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 21-06-2025:04:41:12 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4258 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4260 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4265 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4267 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4272 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4275 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4277 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4281 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4282 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4284 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4285 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4292 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4298 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4309 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4324 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4331 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 21-06-2025:04:44:41 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 

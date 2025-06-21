@@ -17,9 +17,9 @@ namespace BatchProcessing.Services
             _context = context;
         }
 
-        public async Task Save(List<TransactionRaw> transactions, CancellationToken? ct = default)
+        public async Task<int> Save(List<TransactionRaw> transactions, CancellationToken? ct = default)
         {
-
+            int inserted = 0;
             var strategy = _context.Database.CreateExecutionStrategy();
 
             await strategy.ExecuteAsync(async ct =>
@@ -29,15 +29,18 @@ namespace BatchProcessing.Services
                 try
                 {
                     _context.AddRange(transactions);
-                    await _context.SaveChangesAsync(ct);
+                    inserted = await _context.SaveChangesAsync(ct);
                     await tx.CommitAsync(ct);
+                    
                 }
                 catch
                 {
                     await tx.RollbackAsync(ct);
-                    throw;
+                    inserted = 0;
                 }
             }, CancellationToken.None);
+
+            return inserted;
         }
     }
 }

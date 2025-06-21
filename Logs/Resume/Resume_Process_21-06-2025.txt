@@ -1,0 +1,47 @@
+Fecha de ejecucion: 21-06-2025:04:34:17 /// Total Transacciones leídas: 100 /// Transacciones Exitosas IN: 76 /// Transacciones Fallidas Validacion IN: 24 /// Transacciones Exitosas Processed: 16 /// Transacciones Fallidas Validacion Processed: 0 /// Transacciones Fallidas Permanentes: 0 /// Total OUT Transacciones: 16 /// Hora Inicio: 21-06-2025:16:34:09 /// Hora Procesamiento: 00:00:08.6764452 /// Tiempo Total Proceso: 00:00:08.6764452
+=========== Fecha de ejecucion: 21-06-2025:16:37:08 ===========
+/// Total Transacciones leídas: 100
+  /// Transacciones Exitosas IN: 76
+  /// Transacciones Fallidas Validacion IN: 24
+  /// Transacciones Exitosas Processed: 16 /// Transacciones Fallidas Validacion Processed: 0 
+ /// Transacciones Fallidas Permanentes: 0
+  /// Total OUT Transacciones: 16
+ /// Hora Inicio: 21-06-2025:16:37:08
+ /// Hora Procesamiento: 00:00:08.3567220
+ /// Tiempo Total Proceso: 00:00:08.3567220
+
+=========== Fecha de ejecucion: 21-06-2025:16:38:44 ===========
+/// Total Transacciones leídas: 100
+  /// Transacciones Exitosas IN: 76
+  /// Transacciones Fallidas Validacion IN: 24
+  /// Transacciones Exitosas Processed: 16 
+ /// Transacciones Fallidas Validacion Processed: 0 
+ /// Transacciones Fallidas Permanentes: 0
+  /// Total OUT Transacciones: 16
+ /// Hora Inicio: 21-06-2025:16:38:44
+ /// Hora Procesamiento: 00:00:08.0399355
+ /// Tiempo Total Proceso: 00:00:08.0399355
+
+=========== Fecha de ejecución: 21-06-2025:16:41:05 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  21-06-2025:16:41:05
+/// Hora Procesamiento Al Finalizar:              21-06-2025:16:41:0500:00:08.1332432
+/// Tiempo Total Proceso:                         00:00:08.1332432
+
+=========== Fecha de ejecución: 21-06-2025:16:44:33 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  21-06-2025:16:44:33
+/// Hora Procesamiento Al Finalizar:              21-06-2025:16:44:41
+/// Tiempo Total Proceso:                         00:00:08.1285234

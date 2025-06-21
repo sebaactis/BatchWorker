@@ -21,15 +21,19 @@ namespace BatchProcessing.Services
             _transactionProcessesRepository = transactionProcessesRepository;
         }
 
-        public async Task<bool> ProcessesTransactions()
+        public async Task<(int successInserts, int failedPermanentlyInserts, int failedValidationInserts)> ProcessesTransactions()
         {
+            int successInserts = 0;
+            int failedPermanentlyInserts = 0;
+            int failedValidationInserts = 0;
+
             var transactionsToProcess = _transactionINRepository.FindToProcess();
             var processedTransactions = new List<TransactionProcessed>();
 
             if (!transactionsToProcess.Any())
             {
                 _loggerFileService.Log("No se encontraron transacciones para procesar", LogLevelCustom.Warning, "TRANSACTIONS_PROCESSED");
-                return false;
+                return (0, 0, 0);
             }
 
             foreach (var trx in transactionsToProcess)
@@ -87,6 +91,7 @@ namespace BatchProcessing.Services
                                     LogLevelCustom.Warning,
                                     "TRANSACTIONS_PROCESSED"
                                 );
+                                failedValidationInserts++;
                             }
 
                             attempt++;
@@ -98,6 +103,7 @@ namespace BatchProcessing.Services
                                 _loggerFileService.Log($"Transacción inválida permanentemente tras 3 intentos. ID: {trx.TransactionId}",
                                                        LogLevelCustom.Error,
                                                        "TRANSACTIONS_PROCESSED");
+                                failedPermanentlyInserts++;
                             }
 
                             continue;
@@ -108,6 +114,7 @@ namespace BatchProcessing.Services
 
                         trx.IsProcessed = true;
                         success = true;
+                        successInserts++;
                     }
                     catch (Exception ex)
                     {
@@ -124,6 +131,7 @@ namespace BatchProcessing.Services
                             _loggerFileService.Log($"Transacción {trx.TransactionId} ha fallado 3 veces, se marca como fallida permanentemente",
                                                    LogLevelCustom.Error,
                                                    "TRANSACTIONS_PROCESSED");
+                            failedPermanentlyInserts++;
                         }
                     }
                 }
@@ -138,23 +146,23 @@ namespace BatchProcessing.Services
                 {
                     await _transactionProcessesRepository.Save(processedTransactions);
                     _loggerFileService.Log($"Se procesaron correctamente y se guardaron {processedTransactions.Count()} transacciones.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED");
-                    return true;
+                    return (successInserts, failedPermanentlyInserts, failedValidationInserts);
                 }
                 catch (Exception ex)
                 {
                     _loggerFileService.Log($"Error al guardar las transacciones procesadas: {ex}", LogLevelCustom.Error, "TRANSACTIONS_PROCESSED");
-                    return false;
+                    return (0, 0, 0);
                 }
 
             }
             else
             {
                 _loggerFileService.Log($"Ninguna transacción fue procesada correctamente.", LogLevelCustom.Warning, "TRANSACTIONS_PROCESSED");
-                return false;
+                return (0, 0, 0);
             }
         }
 
-        public async Task<bool> CreateOUTFile()
+        public async Task<int> CreateOUTFile()
         {
             _loggerFileService.Log("Iniciando proceso para generar archivo OUT", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
             string filePath = "Files\\transactions_output.txt";
@@ -164,7 +172,7 @@ namespace BatchProcessing.Services
             if (!transactionsToProcess.Any())
             {
                 _loggerFileService.Log("No hay transacciones para procesar en el archivo OUT", LogLevelCustom.Warning, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
-                return false;
+                return 0;
             }
 
             try
@@ -215,13 +223,13 @@ namespace BatchProcessing.Services
 
                 _loggerFileService.Log("Transacciones marcadas como conciliadas correctamente.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
                 _loggerFileService.Log($"Cantidad de transacciones conciliadas: {lines.Count()}", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
-                return true;
+                return lines.Count();
             }
 
             catch (Exception ex)
             {
                 _loggerFileService.Log($"Error durante la creacion del archivo OUT: {ex}", LogLevelCustom.Error, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
-                return false;
+                return 0;
             }
         }
     }

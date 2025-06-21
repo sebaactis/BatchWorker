@@ -2,7 +2,7 @@
 {
     internal interface ITransactionProcessedService<T>
     {
-        Task<bool> ProcessesTransactions();
-        Task<bool> CreateOUTFile();
+        Task<(int successInserts, int failedPermanentlyInserts, int failedValidationInserts)> ProcessesTransactions();
+        Task<int> CreateOUTFile();
     }
 }

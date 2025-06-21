@@ -1,5 +1,6 @@
 ﻿using BatchProcessing.Enums;
 using BatchProcessing.Interfaces;
+using BatchProcessing.Models.DTO;
 
 namespace BatchProcessing.Services
 {
@@ -34,7 +35,38 @@ namespace BatchProcessing.Services
             File.AppendAllText(filePath, messageToSave);
         }
 
-        public void LogMessage(string message, LogLevelCustom levelLog)
+        public void LogTotalProcess(DailyResumeDTO processResumen, LogLevelCustom levelLog)
+        {
+            string logDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Logs/Resume");
+
+            if (!Directory.Exists(logDirectory))
+            {
+                Directory.CreateDirectory(logDirectory);
+            }
+
+            string fileName = $"Resume_Process_{DateTime.Now.ToString("dd-MM-yyyy")}.txt";
+            string filePath = Path.Combine(logDirectory, fileName);
+
+            string messageToSave =
+                                    $"{Environment.NewLine}" +
+                                    $"=========== Fecha de ejecución: {processResumen.StartTime:dd-MM-yyyy:HH:mm:ss} ==========={Environment.NewLine}" +
+                                    $"/// {"Total Transacciones leídas:".PadRight(45)} {processResumen.TotalTransactions}{Environment.NewLine}" +
+                                    $"/// {"Transacciones Exitosas IN:".PadRight(45)} {processResumen.SuccessfulProcessedTransactionsIN}{Environment.NewLine}" +
+                                    $"/// {"Transacciones Fallidas Validación IN:".PadRight(45)} {processResumen.FailedValidationTransactionsIN}{Environment.NewLine}" +
+                                    $"/// {"Transacciones Exitosas Processed:".PadRight(45)} {processResumen.SuccessfulProcessedTransactionsProcessed}{Environment.NewLine}" +
+                                    $"/// {"Transacciones Fallidas Validación Processed:".PadRight(45)} {processResumen.FailedValidationTransactionsProcessed}{Environment.NewLine}" +
+                                    $"/// {"Transacciones Fallidas Permanentes:".PadRight(45)} {processResumen.PermanentFailedTransactions}{Environment.NewLine}" +
+                                    $"/// {"Total OUT Transacciones:".PadRight(45)} {processResumen.TotalOUTTransactions}{Environment.NewLine}" +
+                                    $"/// {"Hora Inicio:".PadRight(45)} {processResumen.StartTime:dd-MM-yyyy:HH:mm:ss}{Environment.NewLine}" +
+                                    $"/// {"Hora Procesamiento Al Finalizar:".PadRight(45)} {processResumen.EndTime:dd-MM-yyyy:HH:mm:ss}{Environment.NewLine}" +
+                                    $"/// {"Tiempo Total Proceso:".PadRight(45)} {processResumen.TotalTimeProcess}{Environment.NewLine}";
+
+
+            LogMessage(messageToSave, levelLog);
+            File.AppendAllText(filePath, messageToSave);
+        }
+
+        private void LogMessage(string message, LogLevelCustom levelLog)
         {
             switch (levelLog)
             {
