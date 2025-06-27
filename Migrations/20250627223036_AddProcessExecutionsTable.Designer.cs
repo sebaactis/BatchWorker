@@ -3,6 +3,7 @@ using System;
 using BatchProcessing.Infraestructure.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BatchProcessing.Migrations
 {
     [DbContext(typeof(BatchDbContext))]
-    partial class BatchDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250627223036_AddProcessExecutionsTable")]
+    partial class AddProcessExecutionsTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -69,7 +72,7 @@ namespace BatchProcessing.Migrations
 
                     b.HasKey("ProcessId");
 
-                    b.ToTable("PROCESS_EXECUTIONS", (string)null);
+                    b.ToTable("ProcessExecutions");
                 });
 
             modelBuilder.Entity("BatchProcessing.Models.TransactionProcessed", b =>

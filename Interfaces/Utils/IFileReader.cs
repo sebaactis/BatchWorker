@@ -1,4 +1,4 @@
-﻿namespace BatchProcessing.Interfaces
+﻿namespace BatchProcessing.Interfaces.Utils
 {
     public interface IFileReader<T> where T : class
     {

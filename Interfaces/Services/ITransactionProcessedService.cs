@@ -1,4 +1,4 @@
-﻿namespace BatchProcessing.Interfaces
+﻿namespace BatchProcessing.Interfaces.Services
 {
     internal interface ITransactionProcessedService<T>
     {

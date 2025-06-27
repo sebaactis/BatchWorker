@@ -1,5 +1,6 @@
 ﻿using BatchProcessing.Enums;
-using BatchProcessing.Interfaces;
+using BatchProcessing.Interfaces.Repositories;
+using BatchProcessing.Interfaces.Services;
 using BatchProcessing.Models;
 using FluentValidation;
 using System.Diagnostics;

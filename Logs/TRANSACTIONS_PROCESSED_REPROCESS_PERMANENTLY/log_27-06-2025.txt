@@ -4,3 +4,5 @@ Fecha: 27-06-2025:12:18:23 /// Nivel:  INFO /// Mensaje: El re-proceso de transa
 Fecha: 27-06-2025:02:08:08 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4407 
 Fecha: 27-06-2025:02:08:18 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 1 transacciones. 
 Fecha: 27-06-2025:02:08:22 /// Nivel:  INFO /// Mensaje: El re-proceso de transacciones fallidas se completó correctamente. 
+Fecha: 27-06-2025:08:09:48 /// Nivel:  WARNING /// Mensaje: No hay transacciones para re-procesar permanentemente 
+Fecha: 27-06-2025:08:09:49 /// Nivel:  WARNING /// Mensaje: El re-proceso de transacciones fallidas no tuvo transacciones para reprocesar. 

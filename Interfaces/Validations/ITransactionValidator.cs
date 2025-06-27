@@ -1,6 +1,6 @@
 ﻿using BatchProcessing.Models;
 
-namespace BatchProcessing.Interfaces
+namespace BatchProcessing.Interfaces.Validations
 {
     public interface ITransactionValidator
     {

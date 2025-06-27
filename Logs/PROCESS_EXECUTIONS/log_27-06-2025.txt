@@ -1,0 +1,12 @@
+Fecha: 27-06-2025:08:09:35 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 27-06-2025:08:09:35 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 27-06-2025:08:09:35 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 27-06-2025:08:09:48 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 27-06-2025:08:09:48 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 27-06-2025:08:09:48 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 27-06-2025:08:09:49 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 27-06-2025:08:09:49 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 27-06-2025:08:09:49 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 27-06-2025:08:09:50 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 27-06-2025:08:09:50 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 27-06-2025:08:09:50 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 

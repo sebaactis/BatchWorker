@@ -1,5 +1,6 @@
 ﻿using BatchProcessing.Infraestructure.Database;
-using BatchProcessing.Interfaces;
+using BatchProcessing.Interfaces.Repositories;
+using BatchProcessing.Interfaces.Services;
 using BatchProcessing.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Threading;

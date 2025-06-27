@@ -1,5 +1,7 @@
 using BatchProcessing.Enums;
-using BatchProcessing.Interfaces;
+using BatchProcessing.Interfaces.Services;
+using BatchProcessing.Interfaces.Utils;
+using BatchProcessing.Interfaces.Validations;
 using BatchProcessing.Models;
 using BatchProcessing.Models.DTO;
 using System.Diagnostics;
@@ -24,23 +26,27 @@ namespace BatchProcessing
             using (var scope = _serviceProvider.CreateScope())
             {
                 var processResume = new DailyResumeDTO();
-                var timer = new Stopwatch();
-                timer.Start();
+                var timerFullProcess = new Stopwatch();
+                timerFullProcess.Start();
 
                 var reader = scope.ServiceProvider.GetRequiredService<IFileReader<TransactionRaw>>();
                 var validator = scope.ServiceProvider.GetRequiredService<ITransactionValidator>();
                 var transactionINService = scope.ServiceProvider.GetRequiredService<ITransactionINService<TransactionRaw>>();
                 var processesService = scope.ServiceProvider.GetRequiredService<ITransactionProcessedService<TransactionProcessed>>();
+                var processExecutionService = scope.ServiceProvider.GetRequiredService<IProcessExecutionService>();
                 var loggerFileService = scope.ServiceProvider.GetRequiredService<ILoggerFileService>();
+
+
                 var transactions = reader.Read();
+                var transactionsINStartTime = DateTime.Now;
+                var transactionINTimer = new Stopwatch();
+                transactionINTimer.Start();
 
                 processResume.TotalTransactions = transactions.Count();
-
-                loggerFileService.Log($"El worker empezo a las {DateTime.Now.ToString("dd-MM-yyyy:HH:mm:ss")}", LogLevelCustom.Info, "");
                 processResume.StartTime = DateTime.Now.ToString("dd-MM-yyyy:HH:mm:ss");
 
+                loggerFileService.Log($"El worker empezo a las {DateTime.Now.ToString("dd-MM-yyyy:HH:mm:ss")}", LogLevelCustom.Info, "");
                 loggerFileService.Log($"Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: {transactions.Count()}", LogLevelCustom.Info, "");
-
 
                 var validList = new List<TransactionRaw>();
 
@@ -90,6 +96,26 @@ namespace BatchProcessing
                         var insertedTransactions = await transactionINService.Save(validList, CancellationToken.None);
                         loggerFileService.Log($"Transacciones validas guardadas correctamente: {insertedTransactions}", LogLevelCustom.Info, "TRANSACTIONS_IN");
                         processResume.SuccessfulProcessedTransactionsIN = insertedTransactions;
+
+                        if (_configuration.GetValue<bool>("SaveExecutionProcess"))
+                        {
+
+                            var processExecution = new ProcessExecutionDTO
+                            {
+                                ProcessName = "TRANSACTIONS_IN_SAVE",
+                                ProcessStartDate = transactionsINStartTime,
+                                ProcessEndDate = DateTime.Now,
+                                ProcessDuration = transactionINTimer.Elapsed.ToString(),
+                                ProcessState = 0,
+                                SuccessItems = insertedTransactions,
+                                FailedItems = (int)transactionsFailed
+
+                            };
+
+                            transactionINTimer.Stop();
+                            await processExecutionService.SaveExecution(processExecution);
+
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -109,10 +135,33 @@ namespace BatchProcessing
                 {
                     // Proceso de transaccion de Transactions_IN a Transactions_Processed
                     var processTransactions = await processesService.ProcessesTransactions();
+                    var processingTransactionsStartTime = DateTime.Now;
+                    var processingTransactionsTimer = new Stopwatch();
+                    processingTransactionsTimer.Start();
 
                     if (processTransactions.successInserts > 0)
                     {
                         loggerFileService.Log("El proceso de transacciones finalizó correctamente.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED");
+
+                        if (_configuration.GetValue<bool>("SaveExecutionProcess"))
+                        {
+
+                            var processExecution = new ProcessExecutionDTO
+                            {
+                                ProcessName = "TRANSACTIONS_PROCESSED",
+                                ProcessStartDate = processingTransactionsStartTime,
+                                ProcessEndDate = DateTime.Now,
+                                ProcessDuration = processingTransactionsTimer.Elapsed.ToString(),
+                                ProcessState = 0,
+                                SuccessItems = processTransactions.successInserts,
+                                FailedItems = processTransactions.failedValidationInserts + processTransactions.failedPermanentlyInserts
+
+                            };
+
+                            processingTransactionsTimer.Stop();
+                            await processExecutionService.SaveExecution(processExecution);
+
+                        }
                     }
                     else
                     {
@@ -126,6 +175,9 @@ namespace BatchProcessing
                     if (_configuration.GetValue<bool>("ReprocessFailedTransactions"))
                     {
                         var reprocessTransactions = await processesService.ReprocessedFailedPermanentlyTransactions();
+                        var reprocessingTransactionsStartTime = DateTime.Now;
+                        var reprocessingTransactionsTimer = new Stopwatch();
+                        reprocessingTransactionsTimer.Start();
 
                         if (reprocessTransactions.successProcessed > 0)
                         {
@@ -135,6 +187,26 @@ namespace BatchProcessing
                         {
                             loggerFileService.Log("El re-proceso de transacciones fallidas no tuvo transacciones para reprocesar.", LogLevelCustom.Warning, "TRANSACTIONS_PROCESSED_REPROCESS_PERMANENTLY");
                         }
+
+                        if (_configuration.GetValue<bool>("SaveExecutionProcess"))
+                        {
+
+                            var processExecution = new ProcessExecutionDTO
+                            {
+                                ProcessName = "TRANSACTIONS_REPROCESSED",
+                                ProcessStartDate = reprocessingTransactionsStartTime,
+                                ProcessEndDate = DateTime.Now,
+                                ProcessDuration = reprocessingTransactionsTimer.Elapsed.ToString(),
+                                ProcessState = 0,
+                                SuccessItems = reprocessTransactions.successProcessed,
+                                FailedItems = reprocessTransactions.failedProcessed
+
+                            };
+
+                            reprocessingTransactionsTimer.Stop();
+                            await processExecutionService.SaveExecution(processExecution);
+
+                        }
                     }
                 }
 
@@ -143,9 +215,12 @@ namespace BatchProcessing
                 if (_configuration.GetValue<bool>("GenerateOUTFile"))
                 {
                     // Generamos el archivo de salida.
-                    var OutFileCreationProcess = await processesService.CreateOUTFile();
+                    var outFileCreationProcess = await processesService.CreateOUTFile();
+                    var outFileCreationStartTime = DateTime.Now;
+                    var outFileCreationTimer = new Stopwatch();
+                    outFileCreationTimer.Start();
 
-                    if (OutFileCreationProcess > 0)
+                    if (outFileCreationProcess > 0)
                     {
                         loggerFileService.Log("El archivo OUT se generó correctamente.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
                     }
@@ -154,16 +229,36 @@ namespace BatchProcessing
                         loggerFileService.Log("No se pudo generar el archivo OUT.", LogLevelCustom.Error, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
                     }
 
-                    processResume.TotalOUTTransactions = OutFileCreationProcess;
+                    if (_configuration.GetValue<bool>("SaveExecutionProcess"))
+                    {
+
+                        var processExecution = new ProcessExecutionDTO
+                        {
+                            ProcessName = "OUT_FILE_GENERATE",
+                            ProcessStartDate = outFileCreationStartTime,
+                            ProcessEndDate = DateTime.Now,
+                            ProcessDuration = outFileCreationTimer.Elapsed.ToString(),
+                            ProcessState = 0,
+                            SuccessItems = outFileCreationProcess,
+                            FailedItems = 0 // Revisar esto
+
+                        };
+
+                        outFileCreationTimer.Stop();
+                        await processExecutionService.SaveExecution(processExecution);
+
+                    }
+
+                    processResume.TotalOUTTransactions = outFileCreationProcess;
                 }
 
 
-                timer.Stop();
+                timerFullProcess.Stop();
                 loggerFileService.Log($"El worker de presentacion de transacciones termino a las: {DateTime.Now.ToString("dd-MM-yyyy:HH:mm:ss")}", LogLevelCustom.Info, "");
-                loggerFileService.Log($"Proceso terminado en {timer}", LogLevelCustom.Info, "");
+                loggerFileService.Log($"Proceso terminado en {timerFullProcess}", LogLevelCustom.Info, "");
 
                 processResume.EndTime = DateTime.Now.ToString("dd-MM-yyyy:HH:mm:ss");
-                processResume.TotalTimeProcess = timer.ToString();
+                processResume.TotalTimeProcess = timerFullProcess.ToString();
                 loggerFileService.LogTotalProcess(processResume, LogLevelCustom.Info);
             }
         }

@@ -10,3 +10,7 @@ Fecha: 27-06-2025:02:04:32 /// Nivel:  INFO /// Mensaje: El worker empezo a las 
 Fecha: 27-06-2025:02:04:32 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
 Fecha: 27-06-2025:02:08:26 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 27-06-2025:14:08:26 
 Fecha: 27-06-2025:02:08:26 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:03:54.0948721 
+Fecha: 27-06-2025:08:09:28 /// Nivel:  INFO /// Mensaje: El worker empezo a las 27-06-2025:20:09:28 
+Fecha: 27-06-2025:08:09:28 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 27-06-2025:08:09:50 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 27-06-2025:20:09:50 
+Fecha: 27-06-2025:08:09:50 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:22.0147375 

@@ -1,7 +1,7 @@
 ﻿using BatchProcessing.Enums;
 using BatchProcessing.Models.DTO;
 
-namespace BatchProcessing.Interfaces
+namespace BatchProcessing.Interfaces.Services
 {
     public interface ILoggerFileService
     {

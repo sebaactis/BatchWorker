@@ -1,5 +1,5 @@
 ﻿using BatchProcessing.Infraestructure.Database;
-using BatchProcessing.Interfaces;
+using BatchProcessing.Interfaces.Repositories;
 using BatchProcessing.Models;
 
 namespace BatchProcessing.Repositories

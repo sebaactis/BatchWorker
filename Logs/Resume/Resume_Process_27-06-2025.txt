@@ -34,3 +34,15 @@
 /// Hora Inicio:                                  27-06-2025:14:04:32
 /// Hora Procesamiento Al Finalizar:              27-06-2025:14:08:26
 /// Tiempo Total Proceso:                         00:03:54.0948721
+
+=========== Fecha de ejecución: 27-06-2025:20:09:28 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  27-06-2025:20:09:28
+/// Hora Procesamiento Al Finalizar:              27-06-2025:20:09:50
+/// Tiempo Total Proceso:                         00:00:22.0147375

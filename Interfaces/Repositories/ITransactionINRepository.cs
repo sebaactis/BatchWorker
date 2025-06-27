@@ -1,4 +1,4 @@
-﻿namespace BatchProcessing.Interfaces
+﻿namespace BatchProcessing.Interfaces.Repositories
 {
     public interface ITransactionINRepository<T>
     {

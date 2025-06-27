@@ -7,12 +7,14 @@ namespace BatchProcessing.Infraestructure.Database
     {
         public DbSet<TransactionRaw> Transactions_IN { get; set; }
         public DbSet<TransactionProcessed> Transactions_PROCESSED { get; set; }
+        public DbSet<ProcessExecution> ProcessExecutions { get; set; }
         public BatchDbContext(DbContextOptions<BatchDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<TransactionRaw>().ToTable("TRANSACTIONS_IN");
             modelBuilder.Entity<TransactionProcessed>().ToTable("TRANSACTIONS_PROCESSED");
+            modelBuilder.Entity<ProcessExecution>().ToTable("PROCESS_EXECUTIONS");
 
             modelBuilder.Entity<TransactionRaw>(entity =>
             {
@@ -277,6 +279,44 @@ namespace BatchProcessing.Infraestructure.Database
 
                 entity.Property(e => e.ProcessedDate)
                     .HasColumnName("ProcessedDate");
+            });
+
+            modelBuilder.Entity<ProcessExecution>(entity =>
+            {
+                entity.HasKey(e => e.ProcessId);
+
+                entity.Property(e => e.ProcessId)
+                    .HasColumnName("ProcessId")
+                    .ValueGeneratedOnAdd();
+
+                entity.Property(e => e.ProcessName)
+                    .HasColumnName("ProcessName");
+
+                entity.Property(e => e.ProcessStartDate)
+                    .HasColumnType("timestamp without time zone")
+                    .HasColumnName("ProcessStartDate");
+
+                entity.Property(e => e.ProcessEndDate)
+                    .HasColumnType("timestamp without time zone")
+                    .HasColumnName("ProcessEndDate");
+
+                entity.Property(e => e.ProcessDuration)
+                    .HasColumnName("ProcessDuration");
+
+                entity.Property(e => e.ProcessState)
+                    .HasColumnName("ProcessState")
+                    .HasDefaultValue(0);
+
+                entity.Property(e => e.SuccessItems)
+                    .HasColumnName("SuccessItems")
+                    .HasDefaultValue(0);
+
+                entity.Property(e => e.FailedItems)
+                    .HasColumnName("FailedItems")
+                    .HasDefaultValue(0);
+
+
+
             });
         }
     }

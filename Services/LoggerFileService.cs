@@ -1,5 +1,5 @@
 ﻿using BatchProcessing.Enums;
-using BatchProcessing.Interfaces;
+using BatchProcessing.Interfaces.Services;
 using BatchProcessing.Models.DTO;
 
 namespace BatchProcessing.Services

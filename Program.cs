@@ -1,6 +1,9 @@
 using BatchProcessing;
 using BatchProcessing.Infraestructure.Database;
-using BatchProcessing.Interfaces;
+using BatchProcessing.Interfaces.Repositories;
+using BatchProcessing.Interfaces.Services;
+using BatchProcessing.Interfaces.Utils;
+using BatchProcessing.Interfaces.Validations;
 using BatchProcessing.Models;
 using BatchProcessing.Repositories;
 using BatchProcessing.Services;
@@ -20,8 +23,10 @@ builder.Services.AddScoped<ITransactionValidator, TransactionsValidateService>()
 builder.Services.AddScoped<IValidator<TransactionProcessed>, TransactionProcessedValidator>();
 builder.Services.AddScoped<ITransactionINService<TransactionRaw>, TransactionINService>();
 builder.Services.AddScoped<ITransactionProcessedService<TransactionProcessed>, TransactionProcessesService>();
+builder.Services.AddScoped<IProcessExecutionService, ProcessExecutionService>();
 builder.Services.AddScoped<ITransactionINRepository<TransactionRaw>, TransactionINRepository>();
 builder.Services.AddScoped<ITransactionProcessesRepository<TransactionProcessed>, TransactionProcessesRepository>();
+builder.Services.AddScoped<IProcessExecutionRepository, ProcessExecutionRepository>();
 builder.Services.AddScoped<ILoggerFileService, LoggerFileService>();
 
 builder.Services.AddHostedService<Worker>();

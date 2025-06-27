@@ -1,4 +1,4 @@
-﻿using BatchProcessing.Interfaces;
+﻿using BatchProcessing.Interfaces.Validations;
 using BatchProcessing.Models;
 
 namespace BatchProcessing.Services
