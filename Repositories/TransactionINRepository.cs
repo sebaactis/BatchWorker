@@ -25,6 +25,15 @@ namespace BatchProcessing.Repositories
             return transactions;
         }
 
+        public IEnumerable<TransactionRaw> FindToReprocessPermanently()
+        {
+            var transactions = from trx in _context.Transactions_IN
+                               where trx.FailedPermanently && trx.RetryCount >= 3 && !trx.IsProcessed
+                               select trx;
+
+            return transactions;
+        }
+
         public async Task SaveChangesAsync()
         {
             try

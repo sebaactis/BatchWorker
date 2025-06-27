@@ -1,0 +1,12 @@
+Fecha: 27-06-2025:10:49:10 /// Nivel:  INFO /// Mensaje: El worker empezo a las 27-06-2025:10:49:10 
+Fecha: 27-06-2025:10:49:10 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 27-06-2025:10:49:18 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 27-06-2025:10:49:18 
+Fecha: 27-06-2025:10:49:18 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.6699399 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: El worker empezo a las 27-06-2025:12:18:15 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 27-06-2025:12:18:23 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 27-06-2025:12:18:23 
+Fecha: 27-06-2025:12:18:23 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:00:08.7440270 
+Fecha: 27-06-2025:02:04:32 /// Nivel:  INFO /// Mensaje: El worker empezo a las 27-06-2025:14:04:32 
+Fecha: 27-06-2025:02:04:32 /// Nivel:  INFO /// Mensaje: Iniciando el scope para procesar las transacciones | Cantidad de registros a procesar: 100 
+Fecha: 27-06-2025:02:08:26 /// Nivel:  INFO /// Mensaje: El worker de presentacion de transacciones termino a las: 27-06-2025:14:08:26 
+Fecha: 27-06-2025:02:08:26 /// Nivel:  INFO /// Mensaje: Proceso terminado en 00:03:54.0948721 

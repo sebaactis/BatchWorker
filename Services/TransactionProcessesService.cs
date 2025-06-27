@@ -2,6 +2,7 @@
 using BatchProcessing.Interfaces;
 using BatchProcessing.Models;
 using FluentValidation;
+using System.Diagnostics;
 using System.Globalization;
 
 namespace BatchProcessing.Services
@@ -23,12 +24,8 @@ namespace BatchProcessing.Services
 
         public async Task<(int successInserts, int failedPermanentlyInserts, int failedValidationInserts)> ProcessesTransactions()
         {
-            int successInserts = 0;
-            int failedPermanentlyInserts = 0;
-            int failedValidationInserts = 0;
 
             var transactionsToProcess = _transactionINRepository.FindToProcess();
-            var processedTransactions = new List<TransactionProcessed>();
 
             if (!transactionsToProcess.Any())
             {
@@ -36,130 +33,53 @@ namespace BatchProcessing.Services
                 return (0, 0, 0);
             }
 
-            foreach (var trx in transactionsToProcess)
-            {
-                int attempt = 0;
-                bool success = false;
+            var (processedList, success, failedValidation, failedPermanent) = await ProcessTransactionsInternal(transactionsToProcess.ToList(), "TRANSACTIONS_PROCESSED");
 
-                while (attempt < 3 && !success)
-                {
-                    try
-                    {
-                        var processed = new TransactionProcessed
-                        {
-                            TransactionId = trx.TransactionId,
-                            MerchantId = trx.MerchantId,
-                            MerchantName = trx.MerchantName,
-                            MerchantCountry = trx.MerchantCountry,
-                            MerchantCategoryCode = trx.MerchantCategoryCode,
-                            CardHolderName = trx.CardHolderName,
-                            CardNumberMasked = trx.CardNumberMasked,
-                            CardType = trx.CardType,
-                            CustomerId = trx.CustomerId,
-                            Amount = trx.Amount,
-                            AmountLocalCurrency = trx.AmountLocalCurrency,
-                            LocalCurrency = trx.LocalCurrency,
-                            Currency = trx.Currency,
-                            ExchangeRate = trx.ExchangeRate,
-                            Date = trx.Date,
-                            PostingDate = trx.PostingDate,
-                            AuthorizationDate = trx.AuthorizationDate,
-                            TerminalId = trx.TerminalId,
-                            POSLocation = trx.POSLocation,
-                            POSCountryCode = trx.POSCountryCode,
-                            EntryMode = trx.EntryMode,
-                            AuthorizationCode = trx.AuthorizationCode,
-                            TransactionType = trx.TransactionType,
-                            Status = trx.Status,
-                            IsInternational = trx.IsInternational,
-                            IsFraudSuspected = trx.IsFraudSuspected,
-                            IsOfflineTransaction = trx.IsOfflineTransaction,
-                            IsConciliated = false,
-                            Notes = trx.Notes,
-                            ReferenceNumber = trx.ReferenceNumber,
-                            ProcessedDate = DateTime.UtcNow
-                        };
-
-                        var validationResult = _validator.Validate(processed);
-
-                        if (!validationResult.IsValid)
-                        {
-                            foreach (var error in validationResult.Errors)
-                            {
-                                _loggerFileService.Log(
-                                    $"Error de validación en transacción {trx.TransactionId}: {error.ErrorMessage}",
-                                    LogLevelCustom.Warning,
-                                    "TRANSACTIONS_PROCESSED"
-                                );
-                                failedValidationInserts++;
-                            }
-
-                            attempt++;
-                            trx.RetryCount++;
-
-                            if (attempt >= 3)
-                            {
-                                trx.FailedPermanently = true;
-                                _loggerFileService.Log($"Transacción inválida permanentemente tras 3 intentos. ID: {trx.TransactionId}",
-                                                       LogLevelCustom.Error,
-                                                       "TRANSACTIONS_PROCESSED");
-                                failedPermanentlyInserts++;
-                            }
-
-                            continue;
-                        }
-
-                        processedTransactions.Add(processed);
-                        _loggerFileService.Log($"Transaccion procesada OK: {processed.TransactionId}", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED");
-
-                        trx.IsProcessed = true;
-                        success = true;
-                        successInserts++;
-                    }
-                    catch (Exception ex)
-                    {
-                        attempt++;
-                        trx.RetryCount++;
-
-                        _loggerFileService.Log($"Intento {attempt} fallido para transacción {trx.TransactionId}. Error: {ex.Message}",
-                                               LogLevelCustom.Warning,
-                                               "TRANSACTIONS_PROCESSED");
-
-                        if (attempt >= 3)
-                        {
-                            trx.FailedPermanently = true;
-                            _loggerFileService.Log($"Transacción {trx.TransactionId} ha fallado 3 veces, se marca como fallida permanentemente",
-                                                   LogLevelCustom.Error,
-                                                   "TRANSACTIONS_PROCESSED");
-                            failedPermanentlyInserts++;
-                        }
-                    }
-                }
-
-            }
-
-            await _transactionINRepository.SaveChangesAsync();
-
-            if (processedTransactions.Any())
+            if (processedList.Any())
             {
                 try
                 {
-                    await _transactionProcessesRepository.Save(processedTransactions);
-                    _loggerFileService.Log($"Se procesaron correctamente y se guardaron {processedTransactions.Count()} transacciones.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED");
-                    return (successInserts, failedPermanentlyInserts, failedValidationInserts);
+                    await _transactionProcessesRepository.Save(processedList);
+                    _loggerFileService.Log($"Se procesaron correctamente y se guardaron {processedList.Count} transacciones.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED");
                 }
                 catch (Exception ex)
                 {
                     _loggerFileService.Log($"Error al guardar las transacciones procesadas: {ex}", LogLevelCustom.Error, "TRANSACTIONS_PROCESSED");
                     return (0, 0, 0);
                 }
+            }
 
-            }
-            else
+            return (success, failedPermanent, failedValidation);
+        }
+
+        public async Task<(int successProcessed, int failedProcessed)> ReprocessedFailedPermanentlyTransactions()
+        {
+            var transactionsToProcess = _transactionINRepository.FindToReprocessPermanently();
+
+            if (!transactionsToProcess.Any())
             {
-                _loggerFileService.Log($"Ninguna transacción fue procesada correctamente.", LogLevelCustom.Warning, "TRANSACTIONS_PROCESSED");
-                return (0, 0, 0);
+                _loggerFileService.Log("No hay transacciones para re-procesar permanentemente", LogLevelCustom.Warning, "TRANSACTIONS_PROCESSED_REPROCESS_PERMANENTLY");
+                return (0, 0);
             }
+
+            var (processedList, success, failedValidation, failedPermanent) =
+                await ProcessTransactionsInternal(transactionsToProcess.ToList(), "TRANSACTIONS_PROCESSED_REPROCESS_PERMANENTLY", resetFailedPermanently: true);
+
+            if (processedList.Any())
+            {
+                try
+                {
+                    await _transactionProcessesRepository.Save(processedList);
+                    _loggerFileService.Log($"Se procesaron correctamente y se guardaron {processedList.Count} transacciones.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED_REPROCESS_PERMANENTLY");
+                }
+                catch (Exception ex)
+                {
+                    _loggerFileService.Log($"Error al guardar las transacciones procesadas: {ex}", LogLevelCustom.Error, "TRANSACTIONS_PROCESSED_REPROCESS_PERMANENTLY");
+                    return (0, failedPermanent);
+                }
+            }
+
+            return (success, failedPermanent);
         }
 
         public async Task<int> CreateOUTFile()
@@ -231,6 +151,129 @@ namespace BatchProcessing.Services
                 _loggerFileService.Log($"Error durante la creacion del archivo OUT: {ex}", LogLevelCustom.Error, "TRANSACTIONS_PROCESSED_CREATE_FILE_OUT");
                 return 0;
             }
+        }
+
+
+        private async Task<(List<TransactionProcessed> processedList, int success, int failedValidation, int failedPermanent)> ProcessTransactionsInternal(
+    List<TransactionRaw> transactions, string logScope, bool resetFailedPermanently = false)
+        {
+            var processedList = new List<TransactionProcessed>();
+            int success = 0, failedValidation = 0, failedPermanent = 0;
+
+            foreach (var trx in transactions)
+            {
+                if (resetFailedPermanently)
+                {
+                    trx.RetryCount = 0;
+                    trx.FailedPermanently = false;
+                }
+
+                int attempt = 0;
+                bool done = false;
+
+                while (attempt < 3 && !done)
+                {
+                    try
+                    {
+                        var (isValid, processed, errors) = TryProcessTransaction(trx);
+
+                        if (!isValid)
+                        {
+                            foreach (var err in errors!)
+                            {
+                                _loggerFileService.Log($"Error de validación en transacción {trx.TransactionId}: {err}", LogLevelCustom.Warning, logScope);
+                            }
+
+                            trx.RetryCount++;
+                            attempt++;
+                            failedValidation++;
+
+                            if (attempt >= 3)
+                            {
+                                trx.FailedPermanently = true;
+                                failedPermanent++;
+                                _loggerFileService.Log($"Transacción inválida permanentemente tras 3 intentos. ID: {trx.TransactionId}", LogLevelCustom.Error, logScope);
+                            }
+
+                            continue;
+                        }
+
+                        processedList.Add(processed!);
+                        trx.IsProcessed = true;
+                        success++;
+                        _loggerFileService.Log($"Transaccion procesada OK: {processed?.TransactionId}", LogLevelCustom.Info, logScope);
+                        done = true;
+                    }
+                    catch (Exception ex)
+                    {
+                        attempt++;
+                        trx.RetryCount++;
+
+                        _loggerFileService.Log($"Intento {attempt} fallido para transacción {trx.TransactionId}. Error: {ex.Message}", LogLevelCustom.Warning, logScope);
+
+                        if (attempt >= 3)
+                        {
+                            trx.FailedPermanently = true;
+                            failedPermanent++;
+                            _loggerFileService.Log($"Transacción {trx.TransactionId} ha fallado 3 veces, se marca como fallida permanentemente", LogLevelCustom.Error, logScope);
+                        }
+
+                        await Task.Delay(2000);
+                    }
+                }
+            }
+
+            await _transactionINRepository.SaveChangesAsync();
+
+            return (processedList, success, failedValidation, failedPermanent);
+        }
+
+
+        private (bool isValid, TransactionProcessed? processed, string[]? validationErrors) TryProcessTransaction(TransactionRaw trx)
+        {
+            var processed = new TransactionProcessed
+            {
+                TransactionId = trx.TransactionId,
+                MerchantId = trx.MerchantId,
+                MerchantName = trx.MerchantName,
+                MerchantCountry = trx.MerchantCountry,
+                MerchantCategoryCode = trx.MerchantCategoryCode,
+                CardHolderName = trx.CardHolderName,
+                CardNumberMasked = trx.CardNumberMasked,
+                CardType = trx.CardType,
+                CustomerId = trx.CustomerId,
+                Amount = trx.Amount,
+                AmountLocalCurrency = trx.AmountLocalCurrency,
+                LocalCurrency = trx.LocalCurrency,
+                Currency = trx.Currency,
+                ExchangeRate = trx.ExchangeRate,
+                Date = trx.Date,
+                PostingDate = trx.PostingDate,
+                AuthorizationDate = trx.AuthorizationDate,
+                TerminalId = trx.TerminalId,
+                POSLocation = trx.POSLocation,
+                POSCountryCode = trx.POSCountryCode,
+                EntryMode = trx.EntryMode,
+                AuthorizationCode = trx.AuthorizationCode,
+                TransactionType = trx.TransactionType,
+                Status = trx.Status,
+                IsInternational = trx.IsInternational,
+                IsFraudSuspected = trx.IsFraudSuspected,
+                IsOfflineTransaction = trx.IsOfflineTransaction,
+                IsConciliated = false, // Por defecto, no está conciliada
+                Notes = trx.Notes,
+                ReferenceNumber = trx.ReferenceNumber,
+                ProcessedDate = DateTime.UtcNow
+            };
+
+            var validationResult = _validator.Validate(processed);
+
+            if (!validationResult.IsValid)
+            {
+                return (false, null, validationResult.Errors.Select(e => e.ErrorMessage).ToArray());
+            }
+
+            return (true, processed, null);
         }
     }
 }

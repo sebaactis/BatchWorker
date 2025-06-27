@@ -122,7 +122,23 @@ namespace BatchProcessing
                     processResume.SuccessfulProcessedTransactionsProcessed = processTransactions.successInserts;
                     processResume.FailedValidationTransactionsProcessed = processTransactions.failedValidationInserts;
                     processResume.PermanentFailedTransactions = processTransactions.failedPermanentlyInserts;
+
+                    if (_configuration.GetValue<bool>("ReprocessFailedTransactions"))
+                    {
+                        var reprocessTransactions = await processesService.ReprocessedFailedPermanentlyTransactions();
+
+                        if (reprocessTransactions.successProcessed > 0)
+                        {
+                            loggerFileService.Log("El re-proceso de transacciones fallidas se completó correctamente.", LogLevelCustom.Info, "TRANSACTIONS_PROCESSED_REPROCESS_PERMANENTLY");
+                        }
+                        else
+                        {
+                            loggerFileService.Log("El re-proceso de transacciones fallidas no tuvo transacciones para reprocesar.", LogLevelCustom.Warning, "TRANSACTIONS_PROCESSED_REPROCESS_PERMANENTLY");
+                        }
+                    }
                 }
+
+
 
                 if (_configuration.GetValue<bool>("GenerateOUTFile"))
                 {

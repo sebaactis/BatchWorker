@@ -1,0 +1,609 @@
+Fecha: 27-06-2025:10:49:10 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 1 
+Fecha: 27-06-2025:10:49:10 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9483 | Merchant ID: DEF789 | Amount: 763,77 EUR | Date: 11/6/2025 07:05:00 
+Fecha: 27-06-2025:10:49:10 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 2 
+Fecha: 27-06-2025:10:49:10 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 2: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:10 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 3 
+Fecha: 27-06-2025:10:49:10 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9576 | Merchant ID: DEF789 | Amount: 1170,51 USD | Date: 11/6/2025 01:03:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 4 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7705 | Merchant ID: GHI654 | Amount: 1333,13 EUR | Date: 10/6/2025 16:20:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 5 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7930 | Merchant ID: GHI654 | Amount: 427,82 USD | Date: 9/6/2025 22:40:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 6 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7488 | Merchant ID: GHI654 | Amount: 557,8 USD | Date: 9/6/2025 22:07:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 7 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 7: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 8 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 8: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 9 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1461 | Merchant ID: XYZ456 | Amount: 809,35 USD | Date: 11/6/2025 02:04:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 10 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4375 | Merchant ID: GHI654 | Amount: 541,33 USD | Date: 10/6/2025 08:37:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 11 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9054 | Merchant ID: DEF789 | Amount: 626,95 ARS | Date: 10/6/2025 22:41:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 12 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9609 | Merchant ID: LMN321 | Amount: 213,55 EUR | Date: 10/6/2025 22:14:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 13 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7901 | Merchant ID: XYZ456 | Amount: 284,97 ARS | Date: 10/6/2025 02:29:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 14 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7499 | Merchant ID: XYZ456 | Amount: 246,27 ARS | Date: 11/6/2025 04:17:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 15 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4855 | Merchant ID: GHI654 | Amount: 98,89 EUR | Date: 9/6/2025 16:08:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 16 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 16: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 17 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3032 | Merchant ID: LMN321 | Amount: 718,28 ARS | Date: 10/6/2025 21:09:00 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 18 
+Fecha: 27-06-2025:10:49:11 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5378 | Merchant ID: XYZ456 | Amount: 593,45 EUR | Date: 10/6/2025 07:27:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 19 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4526 | Merchant ID: GHI654 | Amount: 1277,76 EUR | Date: 9/6/2025 11:17:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 20 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7274 | Merchant ID: GHI654 | Amount: 37,51 ARS | Date: 10/6/2025 12:15:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 21 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6215 | Merchant ID: DEF789 | Amount: 1058,99 USD | Date: 10/6/2025 19:11:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 22 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4756 | Merchant ID: GHI654 | Amount: 1017,84 ARS | Date: 9/6/2025 16:46:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 23 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5803 | Merchant ID: GHI654 | Amount: 158,24 EUR | Date: 10/6/2025 14:33:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 24 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1665 | Merchant ID: DEF789 | Amount: 214,09 EUR | Date: 10/6/2025 16:01:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 25 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4526 | Merchant ID: XYZ456 | Amount: 6,62 EUR | Date: 10/6/2025 10:31:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 26 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9384 | Merchant ID: GHI654 | Amount: 162,4 USD | Date: 10/6/2025 09:37:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 27 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3946 | Merchant ID: LMN321 | Amount: 202,09 ARS | Date: 9/6/2025 11:38:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 28 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7801 | Merchant ID: GHI654 | Amount: 1148,21 USD | Date: 10/6/2025 14:06:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 29 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9182 | Merchant ID: LMN321 | Amount: 338,64 USD | Date: 10/6/2025 09:25:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 30 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6361 | Merchant ID: DEF789 | Amount: 281,91 EUR | Date: 9/6/2025 09:56:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 31 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6444 | Merchant ID: XYZ456 | Amount: 791,42 USD | Date: 9/6/2025 13:35:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 32 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7628 | Merchant ID: XYZ456 | Amount: 1,58 USD | Date: 10/6/2025 13:54:00 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 33 
+Fecha: 27-06-2025:10:49:12 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3837 | Merchant ID: LMN321 | Amount: 1400,28 EUR | Date: 10/6/2025 08:32:00 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 34 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7537 | Merchant ID: XYZ456 | Amount: 254,06 USD | Date: 10/6/2025 06:52:00 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 35 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 35: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 36 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 36: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 37 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 8530 | Merchant ID: DEF789 | Amount: 1393,99 USD | Date: 9/6/2025 21:36:00 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 38 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5900 | Merchant ID: XYZ456 | Amount: 208,28 EUR | Date: 10/6/2025 18:11:00 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 39 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3374 | Merchant ID: XYZ456 | Amount: 656,64 USD | Date: 11/6/2025 07:06:00 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 40 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3467 | Merchant ID: LMN321 | Amount: 500,43 EUR | Date: 10/6/2025 16:51:00 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 41 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 41: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 42 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 42: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 43 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4003 | Merchant ID: XYZ456 | Amount: 453,38 EUR | Date: 10/6/2025 23:02:00 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 44 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2695 | Merchant ID: XYZ456 | Amount: 785,35 USD | Date: 9/6/2025 10:09:00 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 45 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 8309 | Merchant ID: XYZ456 | Amount: 488,19 USD | Date: 9/6/2025 18:45:00 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 46 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4064 | Merchant ID: XYZ456 | Amount: 605,06 USD | Date: 9/6/2025 08:15:00 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 47 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4369 | Merchant ID: XYZ456 | Amount: 504,52 ARS | Date: 10/6/2025 10:21:00 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 48 
+Fecha: 27-06-2025:10:49:13 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9635 | Merchant ID: GHI654 | Amount: 460,62 ARS | Date: 9/6/2025 15:28:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 49 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 49: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 50 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5615 | Merchant ID: XYZ456 | Amount: 55,44 EUR | Date: 11/6/2025 02:52:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 51 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5980 | Merchant ID: LMN321 | Amount: 972,63 EUR | Date: 11/6/2025 01:21:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 52 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 52: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 53 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 53: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 54 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4447 | Merchant ID: GHI654 | Amount: 3,15 EUR | Date: 11/6/2025 06:10:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 55 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6942 | Merchant ID: XYZ456 | Amount: 244,54 EUR | Date: 10/6/2025 02:27:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 56 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9714 | Merchant ID: XYZ456 | Amount: 1261,95 EUR | Date: 10/6/2025 14:43:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 57 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9125 | Merchant ID: GHI654 | Amount: 202,78 EUR | Date: 10/6/2025 15:47:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 58 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5385 | Merchant ID: DEF789 | Amount: 1251,52 USD | Date: 10/6/2025 10:51:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 59 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1329 | Merchant ID: GHI654 | Amount: 1437,64 EUR | Date: 9/6/2025 12:53:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 60 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6683 | Merchant ID: DEF789 | Amount: 311,89 USD | Date: 10/6/2025 01:12:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 61 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5791 | Merchant ID: XYZ456 | Amount: 957,76 EUR | Date: 9/6/2025 20:24:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 62 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9590 | Merchant ID: DEF789 | Amount: 862,88 ARS | Date: 10/6/2025 03:33:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 63 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5900 | Merchant ID: XYZ456 | Amount: 394,57 USD | Date: 11/6/2025 05:57:00 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 64 
+Fecha: 27-06-2025:10:49:14 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2604 | Merchant ID: XYZ456 | Amount: 1180,65 USD | Date: 10/6/2025 16:16:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 65 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6438 | Merchant ID: DEF789 | Amount: 177,6 EUR | Date: 11/6/2025 03:41:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 66 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 66: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 67 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4609 | Merchant ID: LMN321 | Amount: 220,56 USD | Date: 10/6/2025 22:45:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 68 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3773 | Merchant ID: LMN321 | Amount: 1031,68 USD | Date: 11/6/2025 00:53:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 69 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1454 | Merchant ID: LMN321 | Amount: 482,77 USD | Date: 11/6/2025 07:42:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 70 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1320 | Merchant ID: GHI654 | Amount: 255,72 EUR | Date: 9/6/2025 17:46:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 71 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 71: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 72 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7501 | Merchant ID: DEF789 | Amount: 1028,7 ARS | Date: 9/6/2025 19:58:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 73 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9638 | Merchant ID: XYZ456 | Amount: 803,25 ARS | Date: 10/6/2025 16:09:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 74 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9343 | Merchant ID: DEF789 | Amount: 785,31 EUR | Date: 10/6/2025 18:15:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 75 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2394 | Merchant ID: GHI654 | Amount: 1144,91 USD | Date: 10/6/2025 05:06:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 76 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7998 | Merchant ID: XYZ456 | Amount: 510,62 EUR | Date: 9/6/2025 13:45:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 77 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3659 | Merchant ID: XYZ456 | Amount: 56,89 ARS | Date: 9/6/2025 20:39:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 78 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 78: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 79 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1154 | Merchant ID: DEF789 | Amount: 7,07 ARS | Date: 10/6/2025 19:51:00 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 80 
+Fecha: 27-06-2025:10:49:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7573 | Merchant ID: XYZ456 | Amount: 273,94 USD | Date: 10/6/2025 19:55:00 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 81 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 81: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 82 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 82: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 83 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4701 | Merchant ID: XYZ456 | Amount: 157,01 EUR | Date: 9/6/2025 13:37:00 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 84 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2448 | Merchant ID: GHI654 | Amount: 366,7 EUR | Date: 9/6/2025 13:19:00 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 85 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6560 | Merchant ID: LMN321 | Amount: 739,86 ARS | Date: 10/6/2025 09:17:00 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 86 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2229 | Merchant ID: LMN321 | Amount: 966,4 ARS | Date: 10/6/2025 00:31:00 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 87 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4526 | Merchant ID: DEF789 | Amount: 116,97 USD | Date: 10/6/2025 08:48:00 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 88 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1837 | Merchant ID: XYZ456 | Amount: 505,77 ARS | Date: 10/6/2025 20:37:00 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 89 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4183 | Merchant ID: LMN321 | Amount: 1262,23 EUR | Date: 10/6/2025 20:33:00 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 90 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9806 | Merchant ID: GHI654 | Amount: 198,35 ARS | Date: 11/6/2025 03:02:00 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 91 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1081 | Merchant ID: LMN321 | Amount: 993,9 EUR | Date: 10/6/2025 06:00:00 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 92 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5963 | Merchant ID: DEF789 | Amount: 842,56 EUR | Date: 10/6/2025 08:47:00 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 93 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 93: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 94 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 94: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 95 
+Fecha: 27-06-2025:10:49:16 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 95: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:10:49:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 96 
+Fecha: 27-06-2025:10:49:17 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 96: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:10:49:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 97 
+Fecha: 27-06-2025:10:49:17 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 97: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:10:49:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 98 
+Fecha: 27-06-2025:10:49:17 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 98: Error: Amount must be greater than 0 and cannot be null.; Merchant country code cannot exceed 3 characters.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:10:49:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 99 
+Fecha: 27-06-2025:10:49:17 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 99: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:10:49:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 100 
+Fecha: 27-06-2025:10:49:17 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 100: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:10:49:18 /// Nivel:  INFO /// Mensaje: Transacciones validas guardadas correctamente: 76 
+Fecha: 27-06-2025:10:49:18 /// Nivel:  INFO /// Mensaje: Transacciones procesadas correctamente: 76 
+Fecha: 27-06-2025:10:49:18 /// Nivel:  WARNING /// Mensaje: Transacciones procesadas correctamente: 76 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 1 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9483 | Merchant ID: DEF789 | Amount: 763,77 EUR | Date: 11/6/2025 07:05:00 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 2 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 2: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 3 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9576 | Merchant ID: DEF789 | Amount: 1170,51 USD | Date: 11/6/2025 01:03:00 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 4 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7705 | Merchant ID: GHI654 | Amount: 1333,13 EUR | Date: 10/6/2025 16:20:00 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 5 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7930 | Merchant ID: GHI654 | Amount: 427,82 USD | Date: 9/6/2025 22:40:00 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 6 
+Fecha: 27-06-2025:12:18:15 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7488 | Merchant ID: GHI654 | Amount: 557,8 USD | Date: 9/6/2025 22:07:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 7 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 7: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 8 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 8: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 9 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1461 | Merchant ID: XYZ456 | Amount: 809,35 USD | Date: 11/6/2025 02:04:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 10 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4375 | Merchant ID: GHI654 | Amount: 541,33 USD | Date: 10/6/2025 08:37:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 11 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9054 | Merchant ID: DEF789 | Amount: 626,95 ARS | Date: 10/6/2025 22:41:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 12 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9609 | Merchant ID: LMN321 | Amount: 213,55 EUR | Date: 10/6/2025 22:14:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 13 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7901 | Merchant ID: XYZ456 | Amount: 284,97 ARS | Date: 10/6/2025 02:29:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 14 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7499 | Merchant ID: XYZ456 | Amount: 246,27 ARS | Date: 11/6/2025 04:17:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 15 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4855 | Merchant ID: GHI654 | Amount: 98,89 EUR | Date: 9/6/2025 16:08:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 16 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 16: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 17 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3032 | Merchant ID: LMN321 | Amount: 718,28 ARS | Date: 10/6/2025 21:09:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 18 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5378 | Merchant ID: XYZ456 | Amount: 593,45 EUR | Date: 10/6/2025 07:27:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 19 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4526 | Merchant ID: GHI654 | Amount: 1277,76 EUR | Date: 9/6/2025 11:17:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 20 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7274 | Merchant ID: GHI654 | Amount: 37,51 ARS | Date: 10/6/2025 12:15:00 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 21 
+Fecha: 27-06-2025:12:18:16 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6215 | Merchant ID: DEF789 | Amount: 1058,99 USD | Date: 10/6/2025 19:11:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 22 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4756 | Merchant ID: GHI654 | Amount: 1017,84 ARS | Date: 9/6/2025 16:46:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 23 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5803 | Merchant ID: GHI654 | Amount: 158,24 EUR | Date: 10/6/2025 14:33:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 24 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1665 | Merchant ID: DEF789 | Amount: 214,09 EUR | Date: 10/6/2025 16:01:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 25 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4526 | Merchant ID: XYZ456 | Amount: 6,62 EUR | Date: 10/6/2025 10:31:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 26 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9384 | Merchant ID: GHI654 | Amount: 162,4 USD | Date: 10/6/2025 09:37:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 27 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3946 | Merchant ID: LMN321 | Amount: 202,09 ARS | Date: 9/6/2025 11:38:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 28 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7801 | Merchant ID: GHI654 | Amount: 1148,21 USD | Date: 10/6/2025 14:06:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 29 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9182 | Merchant ID: LMN321 | Amount: 338,64 USD | Date: 10/6/2025 09:25:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 30 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6361 | Merchant ID: DEF789 | Amount: 281,91 EUR | Date: 9/6/2025 09:56:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 31 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6444 | Merchant ID: XYZ456 | Amount: 791,42 USD | Date: 9/6/2025 13:35:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 32 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7628 | Merchant ID: XYZ456 | Amount: 1,58 USD | Date: 10/6/2025 13:54:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 33 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3837 | Merchant ID: LMN321 | Amount: 1400,28 EUR | Date: 10/6/2025 08:32:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 34 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7537 | Merchant ID: XYZ456 | Amount: 254,06 USD | Date: 10/6/2025 06:52:00 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 35 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 35: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 36 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 36: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:17 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 37 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 8530 | Merchant ID: DEF789 | Amount: 1393,99 USD | Date: 9/6/2025 21:36:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 38 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5900 | Merchant ID: XYZ456 | Amount: 208,28 EUR | Date: 10/6/2025 18:11:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 39 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3374 | Merchant ID: XYZ456 | Amount: 656,64 USD | Date: 11/6/2025 07:06:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 40 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3467 | Merchant ID: LMN321 | Amount: 500,43 EUR | Date: 10/6/2025 16:51:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 41 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 41: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 42 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 42: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 43 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4003 | Merchant ID: XYZ456 | Amount: 453,38 EUR | Date: 10/6/2025 23:02:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 44 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2695 | Merchant ID: XYZ456 | Amount: 785,35 USD | Date: 9/6/2025 10:09:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 45 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 8309 | Merchant ID: XYZ456 | Amount: 488,19 USD | Date: 9/6/2025 18:45:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 46 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4064 | Merchant ID: XYZ456 | Amount: 605,06 USD | Date: 9/6/2025 08:15:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 47 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4369 | Merchant ID: XYZ456 | Amount: 504,52 ARS | Date: 10/6/2025 10:21:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 48 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9635 | Merchant ID: GHI654 | Amount: 460,62 ARS | Date: 9/6/2025 15:28:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 49 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 49: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 50 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5615 | Merchant ID: XYZ456 | Amount: 55,44 EUR | Date: 11/6/2025 02:52:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 51 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5980 | Merchant ID: LMN321 | Amount: 972,63 EUR | Date: 11/6/2025 01:21:00 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 52 
+Fecha: 27-06-2025:12:18:18 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 52: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 53 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 53: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 54 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4447 | Merchant ID: GHI654 | Amount: 3,15 EUR | Date: 11/6/2025 06:10:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 55 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6942 | Merchant ID: XYZ456 | Amount: 244,54 EUR | Date: 10/6/2025 02:27:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 56 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9714 | Merchant ID: XYZ456 | Amount: 1261,95 EUR | Date: 10/6/2025 14:43:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 57 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9125 | Merchant ID: GHI654 | Amount: 202,78 EUR | Date: 10/6/2025 15:47:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 58 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5385 | Merchant ID: DEF789 | Amount: 1251,52 USD | Date: 10/6/2025 10:51:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 59 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1329 | Merchant ID: GHI654 | Amount: 1437,64 EUR | Date: 9/6/2025 12:53:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 60 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6683 | Merchant ID: DEF789 | Amount: 311,89 USD | Date: 10/6/2025 01:12:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 61 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5791 | Merchant ID: XYZ456 | Amount: 957,76 EUR | Date: 9/6/2025 20:24:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 62 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9590 | Merchant ID: DEF789 | Amount: 862,88 ARS | Date: 10/6/2025 03:33:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 63 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5900 | Merchant ID: XYZ456 | Amount: 394,57 USD | Date: 11/6/2025 05:57:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 64 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2604 | Merchant ID: XYZ456 | Amount: 1180,65 USD | Date: 10/6/2025 16:16:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 65 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6438 | Merchant ID: DEF789 | Amount: 177,6 EUR | Date: 11/6/2025 03:41:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 66 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 66: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 67 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4609 | Merchant ID: LMN321 | Amount: 220,56 USD | Date: 10/6/2025 22:45:00 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 68 
+Fecha: 27-06-2025:12:18:19 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3773 | Merchant ID: LMN321 | Amount: 1031,68 USD | Date: 11/6/2025 00:53:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 69 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1454 | Merchant ID: LMN321 | Amount: 482,77 USD | Date: 11/6/2025 07:42:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 70 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1320 | Merchant ID: GHI654 | Amount: 255,72 EUR | Date: 9/6/2025 17:46:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 71 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 71: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 72 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7501 | Merchant ID: DEF789 | Amount: 1028,7 ARS | Date: 9/6/2025 19:58:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 73 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9638 | Merchant ID: XYZ456 | Amount: 803,25 ARS | Date: 10/6/2025 16:09:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 74 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9343 | Merchant ID: DEF789 | Amount: 785,31 EUR | Date: 10/6/2025 18:15:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 75 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2394 | Merchant ID: GHI654 | Amount: 1144,91 USD | Date: 10/6/2025 05:06:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 76 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7998 | Merchant ID: XYZ456 | Amount: 510,62 EUR | Date: 9/6/2025 13:45:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 77 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3659 | Merchant ID: XYZ456 | Amount: 56,89 ARS | Date: 9/6/2025 20:39:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 78 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 78: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 79 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1154 | Merchant ID: DEF789 | Amount: 7,07 ARS | Date: 10/6/2025 19:51:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 80 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7573 | Merchant ID: XYZ456 | Amount: 273,94 USD | Date: 10/6/2025 19:55:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 81 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 81: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 82 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 82: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 83 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4701 | Merchant ID: XYZ456 | Amount: 157,01 EUR | Date: 9/6/2025 13:37:00 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 84 
+Fecha: 27-06-2025:12:18:20 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2448 | Merchant ID: GHI654 | Amount: 366,7 EUR | Date: 9/6/2025 13:19:00 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 85 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6560 | Merchant ID: LMN321 | Amount: 739,86 ARS | Date: 10/6/2025 09:17:00 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 86 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2229 | Merchant ID: LMN321 | Amount: 966,4 ARS | Date: 10/6/2025 00:31:00 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 87 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4526 | Merchant ID: DEF789 | Amount: 116,97 USD | Date: 10/6/2025 08:48:00 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 88 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1837 | Merchant ID: XYZ456 | Amount: 505,77 ARS | Date: 10/6/2025 20:37:00 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 89 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4183 | Merchant ID: LMN321 | Amount: 1262,23 EUR | Date: 10/6/2025 20:33:00 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 90 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9806 | Merchant ID: GHI654 | Amount: 198,35 ARS | Date: 11/6/2025 03:02:00 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 91 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1081 | Merchant ID: LMN321 | Amount: 993,9 EUR | Date: 10/6/2025 06:00:00 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 92 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5963 | Merchant ID: DEF789 | Amount: 842,56 EUR | Date: 10/6/2025 08:47:00 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 93 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 93: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 94 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 94: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 95 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 95: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 96 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 96: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 97 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 97: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 98 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 98: Error: Amount must be greater than 0 and cannot be null.; Merchant country code cannot exceed 3 characters.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 99 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 99: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 100 
+Fecha: 27-06-2025:12:18:21 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 100: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:12:18:23 /// Nivel:  INFO /// Mensaje: Transacciones validas guardadas correctamente: 76 
+Fecha: 27-06-2025:12:18:23 /// Nivel:  INFO /// Mensaje: Transacciones procesadas correctamente: 76 
+Fecha: 27-06-2025:12:18:23 /// Nivel:  WARNING /// Mensaje: Transacciones procesadas correctamente: 76 
+Fecha: 27-06-2025:02:04:32 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 1 
+Fecha: 27-06-2025:02:04:32 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9483 | Merchant ID: DEF789 | Amount: 763,77 EUR | Date: 11/6/2025 07:05:00 
+Fecha: 27-06-2025:02:04:32 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 2 
+Fecha: 27-06-2025:02:04:32 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 2: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:32 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 3 
+Fecha: 27-06-2025:02:04:32 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9576 | Merchant ID: DEF789 | Amount: 1170,51 USD | Date: 11/6/2025 01:03:00 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 4 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7705 | Merchant ID: GHI654 | Amount: 1333,13 EUR | Date: 10/6/2025 16:20:00 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 5 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7930 | Merchant ID: GHI654 | Amount: 427,82 USD | Date: 9/6/2025 22:40:00 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 6 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7488 | Merchant ID: GHI654 | Amount: 557,8 USD | Date: 9/6/2025 22:07:00 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 7 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 7: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 8 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 8: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 9 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1461 | Merchant ID: XYZ456 | Amount: 809,35 USD | Date: 11/6/2025 02:04:00 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 10 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4375 | Merchant ID: GHI654 | Amount: 541,33 USD | Date: 10/6/2025 08:37:00 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 11 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9054 | Merchant ID: DEF789 | Amount: 626,95 ARS | Date: 10/6/2025 22:41:00 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 12 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9609 | Merchant ID: LMN321 | Amount: 213,55 EUR | Date: 10/6/2025 22:14:00 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 13 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7901 | Merchant ID: XYZ456 | Amount: 284,97 ARS | Date: 10/6/2025 02:29:00 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 14 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7499 | Merchant ID: XYZ456 | Amount: 246,27 ARS | Date: 11/6/2025 04:17:00 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 15 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4855 | Merchant ID: GHI654 | Amount: 98,89 EUR | Date: 9/6/2025 16:08:00 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 16 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 16: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 17 
+Fecha: 27-06-2025:02:04:33 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3032 | Merchant ID: LMN321 | Amount: 718,28 ARS | Date: 10/6/2025 21:09:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 18 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5378 | Merchant ID: XYZ456 | Amount: 593,45 EUR | Date: 10/6/2025 07:27:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 19 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4526 | Merchant ID: GHI654 | Amount: 1277,76 EUR | Date: 9/6/2025 11:17:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 20 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7274 | Merchant ID: GHI654 | Amount: 37,51 ARS | Date: 10/6/2025 12:15:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 21 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6215 | Merchant ID: DEF789 | Amount: 1058,99 USD | Date: 10/6/2025 19:11:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 22 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4756 | Merchant ID: GHI654 | Amount: 1017,84 ARS | Date: 9/6/2025 16:46:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 23 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5803 | Merchant ID: GHI654 | Amount: 158,24 EUR | Date: 10/6/2025 14:33:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 24 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1665 | Merchant ID: DEF789 | Amount: 214,09 EUR | Date: 10/6/2025 16:01:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 25 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4526 | Merchant ID: XYZ456 | Amount: 6,62 EUR | Date: 10/6/2025 10:31:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 26 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9384 | Merchant ID: GHI654 | Amount: 162,4 USD | Date: 10/6/2025 09:37:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 27 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3946 | Merchant ID: LMN321 | Amount: 202,09 ARS | Date: 9/6/2025 11:38:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 28 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7801 | Merchant ID: GHI654 | Amount: 1148,21 USD | Date: 10/6/2025 14:06:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 29 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9182 | Merchant ID: LMN321 | Amount: 338,64 USD | Date: 10/6/2025 09:25:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 30 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6361 | Merchant ID: DEF789 | Amount: 281,91 EUR | Date: 9/6/2025 09:56:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 31 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6444 | Merchant ID: XYZ456 | Amount: 791,42 USD | Date: 9/6/2025 13:35:00 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 32 
+Fecha: 27-06-2025:02:04:34 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7628 | Merchant ID: XYZ456 | Amount: 1,58 USD | Date: 10/6/2025 13:54:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 33 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3837 | Merchant ID: LMN321 | Amount: 1400,28 EUR | Date: 10/6/2025 08:32:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 34 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7537 | Merchant ID: XYZ456 | Amount: 254,06 USD | Date: 10/6/2025 06:52:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 35 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 35: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 36 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 36: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 37 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 8530 | Merchant ID: DEF789 | Amount: 1393,99 USD | Date: 9/6/2025 21:36:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 38 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5900 | Merchant ID: XYZ456 | Amount: 208,28 EUR | Date: 10/6/2025 18:11:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 39 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3374 | Merchant ID: XYZ456 | Amount: 656,64 USD | Date: 11/6/2025 07:06:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 40 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3467 | Merchant ID: LMN321 | Amount: 500,43 EUR | Date: 10/6/2025 16:51:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 41 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 41: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 42 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 42: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 43 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4003 | Merchant ID: XYZ456 | Amount: 453,38 EUR | Date: 10/6/2025 23:02:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 44 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2695 | Merchant ID: XYZ456 | Amount: 785,35 USD | Date: 9/6/2025 10:09:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 45 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 8309 | Merchant ID: XYZ456 | Amount: 488,19 USD | Date: 9/6/2025 18:45:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 46 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4064 | Merchant ID: XYZ456 | Amount: 605,06 USD | Date: 9/6/2025 08:15:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 47 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4369 | Merchant ID: XYZ456 | Amount: 504,52 ARS | Date: 10/6/2025 10:21:00 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 48 
+Fecha: 27-06-2025:02:04:35 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9635 | Merchant ID: GHI654 | Amount: 460,62 ARS | Date: 9/6/2025 15:28:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 49 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 49: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 50 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5615 | Merchant ID: XYZ456 | Amount: 55,44 EUR | Date: 11/6/2025 02:52:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 51 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5980 | Merchant ID: LMN321 | Amount: 972,63 EUR | Date: 11/6/2025 01:21:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 52 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 52: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 53 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 53: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 54 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4447 | Merchant ID: GHI654 | Amount: 3,15 EUR | Date: 11/6/2025 06:10:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 55 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6942 | Merchant ID: XYZ456 | Amount: 244,54 EUR | Date: 10/6/2025 02:27:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 56 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9714 | Merchant ID: XYZ456 | Amount: 1261,95 EUR | Date: 10/6/2025 14:43:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 57 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9125 | Merchant ID: GHI654 | Amount: 202,78 EUR | Date: 10/6/2025 15:47:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 58 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5385 | Merchant ID: DEF789 | Amount: 1251,52 USD | Date: 10/6/2025 10:51:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 59 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1329 | Merchant ID: GHI654 | Amount: 1437,64 EUR | Date: 9/6/2025 12:53:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 60 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6683 | Merchant ID: DEF789 | Amount: 311,89 USD | Date: 10/6/2025 01:12:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 61 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5791 | Merchant ID: XYZ456 | Amount: 957,76 EUR | Date: 9/6/2025 20:24:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 62 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9590 | Merchant ID: DEF789 | Amount: 862,88 ARS | Date: 10/6/2025 03:33:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 63 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5900 | Merchant ID: XYZ456 | Amount: 394,57 USD | Date: 11/6/2025 05:57:00 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 64 
+Fecha: 27-06-2025:02:04:36 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2604 | Merchant ID: XYZ456 | Amount: 1180,65 USD | Date: 10/6/2025 16:16:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 65 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6438 | Merchant ID: DEF789 | Amount: 177,6 EUR | Date: 11/6/2025 03:41:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 66 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 66: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 67 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4609 | Merchant ID: LMN321 | Amount: 220,56 USD | Date: 10/6/2025 22:45:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 68 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3773 | Merchant ID: LMN321 | Amount: 1031,68 USD | Date: 11/6/2025 00:53:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 69 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1454 | Merchant ID: LMN321 | Amount: 482,77 USD | Date: 11/6/2025 07:42:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 70 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1320 | Merchant ID: GHI654 | Amount: 255,72 EUR | Date: 9/6/2025 17:46:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 71 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 71: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 72 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7501 | Merchant ID: DEF789 | Amount: 1028,7 ARS | Date: 9/6/2025 19:58:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 73 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9638 | Merchant ID: XYZ456 | Amount: 803,25 ARS | Date: 10/6/2025 16:09:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 74 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9343 | Merchant ID: DEF789 | Amount: 785,31 EUR | Date: 10/6/2025 18:15:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 75 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2394 | Merchant ID: GHI654 | Amount: 1144,91 USD | Date: 10/6/2025 05:06:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 76 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7998 | Merchant ID: XYZ456 | Amount: 510,62 EUR | Date: 9/6/2025 13:45:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 77 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 3659 | Merchant ID: XYZ456 | Amount: 56,89 ARS | Date: 9/6/2025 20:39:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 78 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 78: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 79 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1154 | Merchant ID: DEF789 | Amount: 7,07 ARS | Date: 10/6/2025 19:51:00 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 80 
+Fecha: 27-06-2025:02:04:37 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 7573 | Merchant ID: XYZ456 | Amount: 273,94 USD | Date: 10/6/2025 19:55:00 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 81 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 81: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 82 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 82: Error: Merchant country code cannot exceed 3 characters. 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 83 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4701 | Merchant ID: XYZ456 | Amount: 157,01 EUR | Date: 9/6/2025 13:37:00 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 84 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2448 | Merchant ID: GHI654 | Amount: 366,7 EUR | Date: 9/6/2025 13:19:00 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 85 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 6560 | Merchant ID: LMN321 | Amount: 739,86 ARS | Date: 10/6/2025 09:17:00 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 86 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 2229 | Merchant ID: LMN321 | Amount: 966,4 ARS | Date: 10/6/2025 00:31:00 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 87 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4526 | Merchant ID: DEF789 | Amount: 116,97 USD | Date: 10/6/2025 08:48:00 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 88 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1837 | Merchant ID: XYZ456 | Amount: 505,77 ARS | Date: 10/6/2025 20:37:00 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 89 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 4183 | Merchant ID: LMN321 | Amount: 1262,23 EUR | Date: 10/6/2025 20:33:00 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 90 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 9806 | Merchant ID: GHI654 | Amount: 198,35 ARS | Date: 11/6/2025 03:02:00 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 91 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 1081 | Merchant ID: LMN321 | Amount: 993,9 EUR | Date: 10/6/2025 06:00:00 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 92 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Transaction Masked Card: **** **** **** 5963 | Merchant ID: DEF789 | Amount: 842,56 EUR | Date: 10/6/2025 08:47:00 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 93 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 93: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 94 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 94: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 95 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 95: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 96 
+Fecha: 27-06-2025:02:04:38 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 96: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:02:04:39 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 97 
+Fecha: 27-06-2025:02:04:39 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 97: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:02:04:39 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 98 
+Fecha: 27-06-2025:02:04:39 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 98: Error: Amount must be greater than 0 and cannot be null.; Merchant country code cannot exceed 3 characters.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:02:04:39 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 99 
+Fecha: 27-06-2025:02:04:39 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 99: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:02:04:39 /// Nivel:  INFO /// Mensaje: Procesando la transaccion numero: 100 
+Fecha: 27-06-2025:02:04:39 /// Nivel:  WARNING /// Mensaje: No se pudo grabar la transaccion numero: 100: Error: Amount must be greater than 0 and cannot be null.; Local currency amount cannot be negative. 
+Fecha: 27-06-2025:02:04:40 /// Nivel:  INFO /// Mensaje: Transacciones validas guardadas correctamente: 76 
+Fecha: 27-06-2025:02:04:40 /// Nivel:  INFO /// Mensaje: Transacciones procesadas correctamente: 76 
+Fecha: 27-06-2025:02:04:40 /// Nivel:  WARNING /// Mensaje: Transacciones procesadas correctamente: 76 
