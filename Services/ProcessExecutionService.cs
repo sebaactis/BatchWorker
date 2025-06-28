@@ -16,7 +16,7 @@ namespace BatchProcessing.Services
             _processExecutionRepository = processExecutionRepository;
             _loggerFileService = loggerFileService;
         }
-        public async Task SaveExecution(ProcessExecutionDTO processExecution)
+        public async Task SaveExecution(ProcessExecutionDTO processExecution, string methodCalled)
         {
             var validator = new ProcessExecutionValidator();
             var validationResult = validator.Validate(processExecution);
@@ -25,7 +25,7 @@ namespace BatchProcessing.Services
             {
                 foreach (var error in validationResult.Errors)
                 {
-                    _loggerFileService.Log($"Error en la validacion al grabar la ejecucion del proceso en la propiedad: {error.PropertyName}. Mensaje: {error.ErrorMessage}", LogLevelCustom.Error, "PROCESS_EXECUTIONS");
+                    _loggerFileService.Log($"Error en la validacion al grabar la ejecucion del proceso en la propiedad: {error.PropertyName}. Mensaje: {error.ErrorMessage}. Proceso: {methodCalled}", LogLevelCustom.Error, "PROCESS_EXECUTIONS");
                 }
             }
 

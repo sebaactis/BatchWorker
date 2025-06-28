@@ -1,0 +1,248 @@
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4638 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4640 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4645 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4647 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4652 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4655 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4657 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4661 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4662 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4664 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4665 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4672 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4678 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4689 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4704 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4711 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4714 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4716 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4721 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4723 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4728 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4731 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4733 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4737 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4738 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4740 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4741 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4748 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4754 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4765 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4780 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4787 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4790 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4792 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4797 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4799 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4804 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4807 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4809 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4813 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4814 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4816 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4817 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4824 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4830 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4841 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4856 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4863 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4866 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4868 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4873 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4875 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4880 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4883 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4885 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4889 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4890 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4892 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4893 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4900 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4906 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4917 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4932 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4939 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4942 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4944 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4949 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4951 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4956 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4959 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4961 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4965 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4966 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4968 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4969 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4976 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4982 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 4993 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5008 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5015 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5018 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5020 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5025 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5027 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5032 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5035 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5037 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5041 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5042 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5044 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5045 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5052 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5058 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5069 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5084 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5091 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5094 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5096 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5101 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5103 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5108 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5111 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5113 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5117 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5118 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5120 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5121 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5128 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5134 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5145 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5160 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5167 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5170 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5172 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5177 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5179 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5184 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5187 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5189 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5193 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5194 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5196 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5197 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5204 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5210 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5221 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5236 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5243 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5246 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5248 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5253 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5255 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5260 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5263 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5265 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5269 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5270 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5272 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5273 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5280 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5286 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5297 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5312 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5319 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5322 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5324 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5329 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5331 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5336 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5339 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5341 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5345 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5346 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5348 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5349 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5356 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5362 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5373 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5388 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5395 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 48 transacciones. 
+Fecha: 28-06-2025:07:04:38 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5398 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5400 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5405 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5407 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5412 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5415 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5417 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5421 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5422 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5424 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5425 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5432 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5438 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5449 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5464 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5471 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5474 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5476 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5481 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5483 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5488 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5491 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5493 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5497 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5498 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5500 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5501 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5508 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5514 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5525 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5540 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5547 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5550 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5552 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5557 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5559 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5564 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5567 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5569 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5573 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5574 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5576 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5577 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5584 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5590 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5601 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5616 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5623 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5626 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5628 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5633 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5635 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5640 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5643 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5645 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5649 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5650 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5652 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5653 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5660 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5666 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5677 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5692 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transaccion procesada OK: 5699 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Se procesaron correctamente y se guardaron 16 transacciones. 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: El proceso de transacciones finalizó correctamente. 

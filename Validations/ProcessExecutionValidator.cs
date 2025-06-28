@@ -15,12 +15,12 @@ namespace BatchProcessing.Validations
                 .WithMessage("El nombre del proceso no puede superar los caracteres");
 
             RuleFor(x => x.ProcessStartDate)
-            .GreaterThanOrEqualTo(DateTime.Now)
-            .WithMessage("La fecha de inicio no puede ser menor a la fecha actual");
+                .GreaterThanOrEqualTo(x => DateTime.Now.AddSeconds(-5))
+                .WithMessage("La fecha de inicio no puede ser menor a la fecha actual");
 
             RuleFor(x => x.ProcessEndDate)
-            .GreaterThanOrEqualTo(DateTime.Now)
-            .WithMessage("La fecha de finalizacion no puede ser menor a la fecha actual");
+                .GreaterThanOrEqualTo(x => DateTime.Now.AddSeconds(-5))
+                .WithMessage("La fecha de finalización no puede ser menor a la fecha actual");
 
             RuleFor(x => x.ProcessDuration)
                 .NotEmpty()

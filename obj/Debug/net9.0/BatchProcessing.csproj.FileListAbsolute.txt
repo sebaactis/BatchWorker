@@ -281,3 +281,4 @@ C:\Users\sactis\Desktop\Proyects\BatchWorker\obj\Debug\net9.0\refint\BatchProces
 C:\Users\sactis\Desktop\Proyects\BatchWorker\obj\Debug\net9.0\BatchProcessing.pdb
 C:\Users\sactis\Desktop\Proyects\BatchWorker\obj\Debug\net9.0\BatchProcessing.genruntimeconfig.cache
 C:\Users\sactis\Desktop\Proyects\BatchWorker\obj\Debug\net9.0\ref\BatchProcessing.dll
+D:\Descargas\Seba\Proyects\C#\BatchProcessing\bin\Debug\net9.0\TemplateEngineHost\vs\templatecache.json

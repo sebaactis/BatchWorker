@@ -1,0 +1,60 @@
+Fecha: 28-06-2025:06:36:40 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:06:41:06 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:06:41:06 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:06:41:06 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 28-06-2025:06:41:06 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 28-06-2025:07:04:43 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:07:04:43 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:07:04:43 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:07:04:43 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 48 
+Fecha: 28-06-2025:07:04:43 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Iniciando proceso para generar archivo OUT 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Archivo OUT generado correctamente en: Files\transactions_output.txt 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Transacciones marcadas como conciliadas correctamente. 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Cantidad de transacciones conciliadas: 16 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: El archivo OUT se generó correctamente. 

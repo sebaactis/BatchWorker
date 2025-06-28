@@ -1,0 +1,115 @@
+Fecha: 28-06-2025:06:36:39 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:36:39 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:36:40 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:38:00 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:41:05 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:41:06 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:41:06 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:41:06 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:51:57 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:51:57 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:51:57 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:51:58 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:55:41 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:06:58:39 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:00:22 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:00:22 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:00:22 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalizacion no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:00:31 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:04:32 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:04:32 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalización no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:04:32 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:04:40 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:04:40 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalización no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:04:40 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:04:41 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:04:41 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalización no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:04:41 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:04:43 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:04:43 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessEndDate. Mensaje: La fecha de finalización no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:04:43 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:05:22 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:09:52 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual. Proceso: [TRANSACTIONS_IN] 
+Fecha: 28-06-2025:07:09:52 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:09:53 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:11:12 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:11:13 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  ERROR /// Mensaje: Error en la validacion al grabar la ejecucion del proceso en la propiedad: ProcessStartDate. Mensaje: La fecha de inicio no puede ser menor a la fecha actual. Proceso: [TRANSACTIONS_IN] 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 
+Fecha: 28-06-2025:07:11:39 /// Nivel:  INFO /// Mensaje: Ejecucion del proceso guardada correctamente 

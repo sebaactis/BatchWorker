@@ -1,0 +1,144 @@
+
+=========== Fecha de ejecución: 28-06-2025:18:36:39 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  28-06-2025:18:36:39
+/// Hora Procesamiento Al Finalizar:              28-06-2025:18:36:40
+/// Tiempo Total Proceso:                         00:00:08.9269664
+
+=========== Fecha de ejecución: 28-06-2025:18:38:00 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  28-06-2025:18:38:00
+/// Hora Procesamiento Al Finalizar:              28-06-2025:18:38:00
+/// Tiempo Total Proceso:                         00:00:08.4009016
+
+=========== Fecha de ejecución: 28-06-2025:18:41:05 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  28-06-2025:18:41:05
+/// Hora Procesamiento Al Finalizar:              28-06-2025:18:41:06
+/// Tiempo Total Proceso:                         00:00:08.1080251
+
+=========== Fecha de ejecución: 28-06-2025:18:51:57 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  28-06-2025:18:51:57
+/// Hora Procesamiento Al Finalizar:              28-06-2025:18:51:58
+/// Tiempo Total Proceso:                         00:00:08.4637753
+
+=========== Fecha de ejecución: 28-06-2025:18:55:41 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  28-06-2025:18:55:41
+/// Hora Procesamiento Al Finalizar:              28-06-2025:18:55:41
+/// Tiempo Total Proceso:                         00:00:08.5953069
+
+=========== Fecha de ejecución: 28-06-2025:18:58:31 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  28-06-2025:18:58:31
+/// Hora Procesamiento Al Finalizar:              28-06-2025:18:58:39
+/// Tiempo Total Proceso:                         00:00:08.4224623
+
+=========== Fecha de ejecución: 28-06-2025:18:59:45 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  28-06-2025:18:59:45
+/// Hora Procesamiento Al Finalizar:              28-06-2025:19:00:31
+/// Tiempo Total Proceso:                         00:00:46.3927399
+
+=========== Fecha de ejecución: 28-06-2025:19:04:20 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             48
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      48
+/// Hora Inicio:                                  28-06-2025:19:04:20
+/// Hora Procesamiento Al Finalizar:              28-06-2025:19:04:43
+/// Tiempo Total Proceso:                         00:00:23.6260983
+
+=========== Fecha de ejecución: 28-06-2025:19:05:14 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  28-06-2025:19:05:14
+/// Hora Procesamiento Al Finalizar:              28-06-2025:19:05:22
+/// Tiempo Total Proceso:                         00:00:08.1185629
+
+=========== Fecha de ejecución: 28-06-2025:19:09:44 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  28-06-2025:19:09:44
+/// Hora Procesamiento Al Finalizar:              28-06-2025:19:09:53
+/// Tiempo Total Proceso:                         00:00:09.3746319
+
+=========== Fecha de ejecución: 28-06-2025:19:11:05 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  28-06-2025:19:11:05
+/// Hora Procesamiento Al Finalizar:              28-06-2025:19:11:13
+/// Tiempo Total Proceso:                         00:00:08.0929476
+
+=========== Fecha de ejecución: 28-06-2025:19:11:31 ===========
+/// Total Transacciones leídas:                   100
+/// Transacciones Exitosas IN:                    76
+/// Transacciones Fallidas Validación IN:         24
+/// Transacciones Exitosas Processed:             16
+/// Transacciones Fallidas Validación Processed:  0
+/// Transacciones Fallidas Permanentes:           0
+/// Total OUT Transacciones:                      16
+/// Hora Inicio:                                  28-06-2025:19:11:31
+/// Hora Procesamiento Al Finalizar:              28-06-2025:19:11:39
+/// Tiempo Total Proceso:                         00:00:08.1906237
